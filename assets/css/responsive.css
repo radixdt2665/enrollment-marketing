@@ -1,0 +1,14 @@
+@media (max-width: 1199px) {
+    :root {
+        --font-24: 20px;
+    }
+    .login-content-sec {
+        padding: 32px;
+    }
+    .login-form-sec {
+        padding: 55px 72px 20px;
+    }
+    .login-logo {
+        margin-bottom: 52px;
+    }
+}

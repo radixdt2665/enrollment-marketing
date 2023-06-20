@@ -1,0 +1,125 @@
+@import url(./variable.css);
+
+/* Login Start */
+.login-card {
+    max-width: 1250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.login-form-sec {
+    padding: 95px 142px 60px;
+}
+
+.login-logo {
+    margin-bottom: 82px;
+}
+
+.login-content-sec {
+    padding: 78px;
+    height: 100%;
+}
+
+.login-bg {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login End */
+
+
+
+
+/* common-css start */
+.side-nav{
+    width: 260px;
+    max-width: 100%;
+}
+.rounded-10{
+    border-radius: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+.main-title{
+    margin-top: 36px;
+    font-size: var(--font-24);
+    color: var(--secondary-85);
+    font-family: var(--raleway_bold);
+    margin-bottom: 14px;
+}
+.form-title{
+    font-size: var(--font-20);
+    color: var(--secondary-85);
+    font-family: var(--roboto);
+}
+.form-title::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: var(--secondary-85);
+    left: -20px;
+}
+.form-control{
+    border-color: #4C4E6438;
+}
+.theme-primary-btn{
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: var(--font-17);
+    padding: 9px 30px;
+}
+/* common-css end */
+
+/* data-assessment-section css start */
+
+.data-assessment-section .data-assessment-main{
+    width: calc(100% - 260px);
+    margin-left: auto;
+}
+.data-assessment-section .assessment-form .form-label{
+    margin-bottom: 11px;
+}
+/* .data-assessment-section .assessment-form .form-title{
+    margin-bottom: 26px;
+} */
+/* data-assessment-section css end */
+
+
+
+/* upload-data-section css start */
+.upload-data-section .upload-data-main{
+    width: calc(100% - 260px);
+    margin-left: auto;
+}
+.upload-data-section .file-upload{
+    border: 2px dashed #D9D9D9;
+    padding: 25px 20px;
+    border-radius: 13px;
+}
+.upload-data-section .input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+/* upload-data-section css end */
+
+
+
+
+
+  
+
+

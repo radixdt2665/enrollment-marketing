@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway.woff') format(woff), url('../fonts/raleway.woff2') format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'raleway_medium';
+    src: url('../fonts/raleway_medium.woff') format(woff), url('../fonts/raleway_medium.woff2') format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'raleway_semiBold';
+    src: url('../fonts/raleway_semiBold.woff') format(woff), url('../fonts/raleway_semiBold.woff2') format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'raleway_bold';
+    src: url('../fonts/raleway_bold.woff') format(woff), url('../fonts/raleway_bold.woff2') format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'raleway_extraBold';
+    src: url('../fonts/raleway_extraBold.woff') format(woff), url('../fonts/raleway_extraBold.woff2') format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'raleway_black';
+    src: url('../fonts/raleway_black.woff') format(woff), url('../fonts/raleway_black.woff2') format(woff2);
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto.woff') format(woff), url('../fonts/roboto.woff2') format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'roboto_medium';
+    src: url('../fonts/roboto_medium.woff') format(woff), url('../fonts/roboto_medium.woff2') format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'roboto_bold';
+    src: url('../fonts/roboto_bold.woff') format(woff), url('../fonts/roboto_bold.woff2') format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'roboto_black';
+    src: url('../fonts/roboto_black.woff') format(woff), url('../fonts/roboto_black.woff2') format(woff2);
+    font-display: swap;
+}
+
+
+
+:root {
+    --primary: #FFD100;
+    --primary-85: #FFD826;
+    --primary-75: #FFDD40;
+    --primary-50: #FFE77F;
+    --primary-40: #FFED99;
+    --primary-25: #FFF3BF;
+    --primary-10: #FFFBE6;
+
+    --secondary: #25282A;
+    --secondary-85: #63666A;
+    --secondary-75: #63666A;
+    --secondary-50: #B0B2B4;
+    --secondary-40: #C1C2C3;
+    --secondary-25: #D8D8D9;
+    --secondary-10: #F0F0F1;
+    --secondary-3: #FAFAFA;
+
+    --body-bg: #FAFAFB;
+    --white: #FFFFFF;
+    --red: #FF4D49;
+    --warning-bg: #FFF6E5;
+    --warning-fg: #E4A324;
+    --success-bg: #EEFBE5;
+    --success-fg: #5BB420;
+    --info-bg: #EBF8F8;
+    --info-fg: #B1E4E3;
+    --error-bg: #FFEDEC;
+    --error-fg: #D13F3C;
+    --table-header: #B1B3B4;
+
+    --raleway: 'raleway', sans-serif;
+    --raleway_medium: 'raleway_medium', sans-serif;
+    --raleway_semiBold: 'raleway_semiBold', sans-serif;
+    --raleway_bold: 'raleway_bold', sans-serif;
+    --raleway_extraBold: 'raleway_extraBold', sans-serif;
+    --raleway_black: 'raleway_black', sans-serif;
+
+    --roboto: 'roboto', sans-serif;
+    --roboto_medium: 'roboto_medium', sans-serif;
+    --roboto_bold: 'roboto_bold', sans-serif;
+    --roboto_black: 'roboto_black', sans-serif;
+
+    --font-24: 24px;
+    --font-17: 17px;
+    --font-14: 14px;
+    --font-15: 15px;
+    --font-12: 12px;
+
+    --letter-spacing-0_15: 0.15px;
+    --letter-spacing-0_4: 0.4px;
+}
+
+body {
+    background: var(--body-bg);
+    font-family: var(--roboto);
+}
+
+.btn {
+    font-size: var(--font-17);
+    letter-spacing: var(--letter-spacing-0_15);
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-family: var(--raleway_semiBold);
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--secondary);
+}
+
+.btn-primary:hover, .btn-check:active+.btn-primary,
+.btn-check:checked+.btn-primary, .btn-primary.active,
+.btn-primary:active, .show>.btn-primary.dropdown-toggle,
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--secondary);
+    box-shadow: none;
+}
+
+.btn-check:active+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-primary.active:focus, .btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.font-raleway {
+    font-family: var(--raleway);
+}
+
+.font-raleway_medium {
+    font-family: var(--raleway_medium);
+}
+
+.font-raleway_semiBold {
+    font-family: var(--raleway_semiBold);
+}
+
+.font-raleway_bold {
+    font-family: var(--raleway_bold);
+}
+
+.font-raleway_extraBold {
+    font-family: var(--raleway);
+}
+
+.font-raleway_black {
+    font-family: var(--raleway_black);
+}
+
+.font-24 {
+    font-size: var(--font-24);
+}
+
+.font-17 {
+    font-size: var(--font-17);
+}
+
+.font-15 {
+    font-size: var(--font-15);
+}
+
+.font-14 {
+    font-size: var(--font-14);
+}
+
+.font-12 {
+    font-size: var(--font-12);
+}
+
+.letter-spacing-0_15 {
+    letter-spacing: var(--letter-spacing-0_15);
+}
+
+.letter-spacing-0_4 {
+    letter-spacing: var(--letter-spacing-0_4);
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.bg-primary {
+    background: var(--primary) !important;
+}
+
+.bg-secondary-75 {
+    background-color: var(--secondary-75);
+}
+
+.fg-secondary {
+    color: var(--secondary);
+}
+
+.fg-secondary-85 {
+    color: var(--secondary-85);
+}
+
+.fg-secondary-40 {
+    color: var(--secondary-40);
+}
+
+
+/* form controls */
+.form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown),
+.form-floating>.form-control {
+    border: 1px solid var(--secondary-25);
+    border-radius: 8px;
+    padding: 12px 15px 8px;
+    height: auto;
+    font-size: var(--font-12);
+    font-family: var(--raleway);
+    color: var( --secondary-85);
+    letter-spacing: var(--letter-spacing-0_4);
+}
+.form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+    box-shadow: none;
+}
+.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label,
+.form-floating>label {
+    height: auto;
+    font-size: var(--font-12);
+    background: var(--white);
+    top: -9px;
+    left: 12px;
+    padding: 0px 4px;
+    color: var(--secondary);
+    font-family: var(--roboto);
+}
+
+.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    opacity: 1;
+    transform: none;
+}
+
+.icon-form-control .form-control,
+.icon-form-control.form-floating>.form-control:focus, 
+.icon-form-control.form-floating>.form-control:not(:placeholder-shown), 
+.icon-form-control.form-floating>.form-control {
+    padding: 12px 30px 8px 15px;
+}
+
+.input-right-txt {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+}
