@@ -105,6 +105,7 @@
     --roboto_black: 'roboto_black', sans-serif;
 
     --font-24: 24px;
+    --font-20: 20px;
     --font-17: 17px;
     --font-14: 14px;
     --font-15: 15px;
@@ -172,6 +173,12 @@ body {
 
 .font-raleway_black {
     font-family: var(--raleway_black);
+}
+.font-roboto_bold {
+    font-family: var(--roboto_bold);
+}
+.font-roboto_medium {
+    font-family: var(--roboto_medium);
 }
 
 .font-24 {
