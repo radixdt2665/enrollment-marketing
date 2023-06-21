@@ -207,6 +207,10 @@ body.small-side-nav .logo-small {
 .upload-data-section .data-table .table-striped>tbody>tr:nth-of-type(odd) td:last-child{
     padding-right: 20px;
 }
+.upload-data-section .data-table .table thead tr td{
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
 /* upload-data-section css end */
 
 
@@ -227,6 +231,16 @@ body.small-side-nav .logo-small {
 
 
 
+/* program-assessment-section css start */
+.program-assessment-section .select-dropdown{
+    border: 1px solid var(--secondary-25);
+    border-radius: 8px;
+}
+.program-assessment-section .chart-list{
+    border: 1px solid var(--secondary-25);
+    border-radius: 8px;
+}
+/* program-assessment-section css end */
   
 
 

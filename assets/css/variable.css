@@ -247,6 +247,10 @@ body {
     background-color: var(--secondary-75);
 }
 
+.info-bg{
+    background-color: var(--info-bg);
+}
+
 .fg-secondary {
     color: var(--secondary);
 }
