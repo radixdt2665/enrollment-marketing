@@ -91,6 +91,7 @@
     --error-bg: #FFEDEC;
     --error-fg: #D13F3C;
     --table-header: #B1B3B4;
+    --color-black : #1E1E2D;
 
     --raleway: 'raleway', sans-serif;
     --raleway_medium: 'raleway_medium', sans-serif;
@@ -110,6 +111,7 @@
     --font-14: 14px;
     --font-15: 15px;
     --font-12: 12px;
+    --font-5: 5px;
 
     --letter-spacing-0_15: 0.15px;
     --letter-spacing-0_4: 0.4px;
@@ -133,6 +135,21 @@ body {
     border-color: var(--primary);
     color: var(--secondary);
 }
+.btn-border {
+    border:1px solid var(--secondary-50);
+    color: var(--secondary);
+}
+
+.btn-border:hover, .btn-check:active+.btn-border,
+.btn-check:checked+.btn-border, .btn-border.active,
+.btn-border:active, .show>.btn-border.dropdown-toggle,
+.btn-check:focus+.btn-border, .btn-border:focus {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--secondary);
+    box-shadow: none;
+}
+
 
 .btn-primary:hover, .btn-check:active+.btn-primary,
 .btn-check:checked+.btn-primary, .btn-primary.active,
@@ -174,6 +191,9 @@ body {
 .font-raleway_black {
     font-family: var(--raleway_black);
 }
+.font-roboto {
+    font-family: var(--roboto);
+}
 .font-roboto_bold {
     font-family: var(--roboto_bold);
 }
@@ -183,6 +203,9 @@ body {
 
 .font-24 {
     font-size: var(--font-24);
+}
+.font-20 {
+    font-size: var(--font-20);
 }
 
 .font-17 {
@@ -199,6 +222,9 @@ body {
 
 .font-12 {
     font-size: var(--font-12);
+}
+.font-5 {
+    font-size: var(--font-5);
 }
 
 .letter-spacing-0_15 {
@@ -232,8 +258,30 @@ body {
 .fg-secondary-40 {
     color: var(--secondary-40);
 }
+.fg-black {
+    color: var(--color-black);
+}
 
-
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--secondary-10);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary-40);
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-50);
+}
 /* form controls */
 .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown),
 .form-floating>.form-control {
@@ -280,4 +328,31 @@ body {
     right: 8px;
     display: flex;
     align-items: center;
+}
+
+.main-title {
+    /* margin-top: 36px; */
+    font-size: var(--font-24);
+    color: var(--secondary-85);
+    font-family: var(--raleway_bold);
+    margin-bottom: 14px;
+    padding-left: 22px;
+    letter-spacing: var(--letter-spacing-0_15);
+}
+
+.form-title::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: var(--secondary-85);
+    left: -20px;
+}
+
+.content-body {
+    padding: 36px 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }

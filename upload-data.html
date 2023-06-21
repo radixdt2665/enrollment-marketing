@@ -35,193 +35,413 @@
 </head>
 
 <body>
-    <!-- navbar start -->
-    <nav class="navbar custom-nav py-1">
-        <div class="container-fluid">
-            <div class="d-flex">
-                <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="Erollment Marketing" width="194"
-                        height="49" class="img-fluid"></a>
-                <button class="navbar-toggler d-block border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-expanded="false">
-                    <span class="menu-icon"><img src="./assets/images/menu_open.svg" alt="Menu Icon" width="18"
-                            height="12"></span>
-                </button>
-            </div>
-            <div class="user-detail me-3" id="navbarSupportedContent">
-                <div class="dropdown">
-                    <button class="bg-transparent border-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
-                        <span class="fg-secondary-85 font-12 font-raleway pe-1">Welcome</span><span class="fg-secondary font-12 font-roboto_bold">John Doe</span> <span class="ms-2"><img src="./assets/images/dropdown.svg" alt="Dropdwon Icon" width="12" height="7"></span>
-                    </button>
-                    <ul class="dropdown-menu border-0 custom-shadow" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item px-3 py-2 font-15 fg-secondary font-roboto_medium" href="#"><img src="./assets/images/person.svg" alt="Person Icon" width="13" height="13"><span class="font-15 ps-2">My Profile</span></a></li>
-                        <li><a class="dropdown-item px-3 py-2 font-15 fg-secondary font-roboto_medium" href="#"><img src="./assets/images/logout.svg" alt="Logout Icon" width="13" height="13"><span class="font-15 ps-2">Logout</span></a></li>
-                    </ul>
+        <!-- navbar start -->
+        <header>
+            <nav class="navbar custom-nav py-1">
+                <div class="container-fluid">
+                    <div class="d-flex">
+                        <a class="navbar-brand py-1 m-0 small-side-nav" href="#"><img src="./assets/images/logo.svg"
+                                alt="Erollment Marketing" width="194" height="49" class="img-fluid nav-logo">
+                            <img src="./assets/images/logo-small.svg" alt="Erollment Marketing" width="48" height="49"
+                                class="img-fluid logo-small"></a>
+                        <button class="navbar-toggler d-block border-0 sidebar-toogle" type="button">
+                            <span class="menu-icon"><img src="./assets/images/menu_open.svg" alt="Menu Icon" width="18"
+                                    height="12"></span>
+                        </button>
+                    </div>
+                    <div class="user-detail me-3">
+                        <div class="dropdown">
+                            <button class="bg-transparent border-0 fg-secondary-85 font-12 letter-spacing-0_4" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                                <span class="font-raleway pe-1">Welcome</span><span
+                                    class="font-roboto_bold fg-secondary">John Doe</span> <span class="ms-2"><img
+                                        src="./assets/images/dropdown.svg" alt="Dropdwon Icon" width="12" height="7"></span>
+                            </button>
+                            <ul class="dropdown-menu border-0 custom-shadow letter-spacing-0_15"
+                                aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item px-3 py-2 font-15 fg-secondary font-roboto_medium" href="#"><img
+                                            src="./assets/images/person.svg" alt="Person Icon" width="13" height="13"><span
+                                            class="font-15 ps-2">My Profile</span></a></li>
+                                <li><a class="dropdown-item px-3 py-2 font-15 fg-secondary font-roboto_medium" href="#"><img
+                                            src="./assets/images/logout.svg" alt="Logout Icon" width="13" height="13"><span
+                                            class="font-15 ps-2">Logout</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </nav>
-    <!-- navbar end -->
+            </nav>
+        </header>
+        <!-- navbar end -->
 
 
     <div class="page-content">
         <div class="d-flex">
             <!-- side-nav start -->
             <div class="side-nav px-2 py-4 bg-primary">
-                <ul class="list-unstyled">
-                    <li class="mt-2"><a href="javascript:void(0)" class="text-decoration-none nav-link font-17 fg-secondary"><span class="pe-2"><img src="./assets/images/manage-data.svg" alt="Manage Data Icon" height="20" width="20"></span><span>Load/Manage Data</span></a></li>
-                    <li class="mt-2"><a href="javascript:void(0)" class="text-decoration-none nav-link font-17 fg-secondary"><span class="pe-2"><img src="./assets/images/program-assessment.svg" alt="Program Assessment Icon" height="20" width="20"></span><span>Program Assessment</span></a></li>
-                    <li class="mt-2"><a href="javascript:void(0)" class="text-decoration-none nav-link font-17 fg-secondary"><span class="pe-2"><img src="./assets/images/program-planner.svg" alt="Program Planner Icon" height="20" width="20"></span><span>Program Planner</span></a></li>
-                    <li class="mt-2"><a href="javascript:void(0)" class="text-decoration-none nav-link font-17 fg-secondary"><span class="pe-2"><img src="./assets/images/user-guide.svg" alt="User Guide Icon" height="20" width="20"></span><span>User Guide</span></a></li>
+                <ul class="list-unstyled side-nav-ul m-0">
+                    <li class="mt-2"><a href="javascript:void(0)"
+                            class="text-decoration-none nav-link font-17 fg-secondary active d-flex"><span
+                                class="pe-2"><img src="./assets/images/manage-data.svg" alt="Manage Data Icon"
+                                    height="20" width="20"></span><span class="nav-title">Load/Manage Data</span></a>
+                    </li>
+                    <li class="mt-2"><a href="javascript:void(0)"
+                            class="text-decoration-none nav-link font-17 fg-secondary d-flex"><span class="pe-2"><img
+                                    src="./assets/images/program-assessment.svg" alt="Program Assessment Icon"
+                                    height="20" width="20"></span><span class="nav-title">Program Assessment</span></a>
+                    </li>
+                    <li class="mt-2"><a href="javascript:void(0)"
+                            class="text-decoration-none nav-link font-17 fg-secondary d-flex"><span class="pe-2"><img
+                                    src="./assets/images/program-planner.svg" alt="Program Planner Icon" height="20"
+                                    width="20"></span><span class="nav-title">Program Planner</span></a></li>
+                    <li class="mt-2"><a href="javascript:void(0)"
+                            class="text-decoration-none nav-link font-17 fg-secondary d-flex"><span class="pe-2"><img
+                                    src="./assets/images/user-guide.svg" alt="User Guide Icon" height="20"
+                                    width="20"></span><span class="nav-title">User Guide</span></a></li>
                 </ul>
             </div>
             <!-- side-nav end -->
 
-            <div class="content-wrapper-main">
-                <!-- data-assessment section start -->
-                <section class="upload-data-section">
-                    <div class="upload-data-main px-4">
-                        <div class="container-fluid">
-                            <h2 class="main-title">Upload Academic Program Data</h2>
-                            <div class="custom-shadow rounded-10 p-20 bg-white">
-                                <form class="data-upload-form">
-                                    <h3 class="form-title position-relative mb-2 mb-lg-4">Upload Data</h3>
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="mb-3">
-                                                <label for="formFile" class="form-label fg-secondary font-roboto_medium">SaaS Academic Program</label>
-                                                <div class="file-upload d-flex justify-content-between align-items-center">
-                                                    <img src="./assets/images/upload-icon.svg" alt="Upload Icon">
-                                                    <span class="font-14 fg-secondary font-roboto_medium">Drag files to upload or</span>
-                                                    <div class="form-group">
-                                                        <input type="file" name="file" id="file" class="input-file">
-                                                        <label for="file" class="btn btn-primary">
-                                                          <span>Browse Files</span>
-                                                        </label>
-                                                      </div>        
+            <div class="content-wrapper-main ml-auto overflow-auto">
+                <div class="content-body">
+                    <!-- data-assessment section start -->
+                    <section class="upload-data-section">
+                        <div class="upload-data-main px-4">
+                            <div class="container-fluid px-lg-0">
+                                <h2 class="main-title">Upload Academic Program Data</h2>
+                                <div class="custom-shadow rounded-10 p-20 bg-white">
+                                    <form class="data-upload-form">
+                                        <h3 class="form-title position-relative mb-2 mb-lg-4">Upload Data</h3>
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label fg-secondary font-roboto_medium">SaaS Academic Program</label>
+                                                    <div class="file-upload d-flex justify-content-between align-items-center">
+                                                        <img src="./assets/images/upload-icon.svg" alt="Upload Icon">
+                                                        <span class="font-14 fg-secondary font-roboto_medium">Drag files to upload or</span>
+                                                        <div class="form-group">
+                                                            <input type="file" name="file" id="file" class="input-file">
+                                                            <label for="file" class="btn btn-primary">
+                                                              <span>Browse Files</span>
+                                                            </label>
+                                                          </div>        
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="file-upload-status">
-                                                <div class="d-flex align-items-center">
-                                                    <img src="./assets/images/file-icon.svg" alt="File Icon" width="8" height="10" class="me-1">
-                                                    <p class="font-14 fg-secondary-85 mb-0"><span class="filename me-2">saas-academic-program.csv</span><span class="file-size font-roboto_medium">12MB</span></p>
-                                                </div>
-                                                <div class="progressbar d-flex ms-2 ps-1 align-items-center">
-                                                    <div class="progress-line rounded-10 bg-primary"></div>
-                                                    <img src="./assets/images/success.svg" alt="Success" class="ms-2">
+                                                <div class="file-upload-status">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/images/file-icon.svg" alt="File Icon" width="8" height="10" class="me-1">
+                                                        <p class="font-14 fg-secondary-85 mb-0"><span class="filename me-2">saas-academic-program.csv</span><span class="file-size font-roboto_medium">12MB</span></p>
+                                                    </div>
+                                                    <div class="progressbar d-flex ms-2 ps-1 align-items-center">
+                                                        <div class="progress-line rounded-10 bg-primary"></div>
+                                                        <img src="./assets/images/success.svg" alt="Success" class="ms-2">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
-                            </div>
-            
-                            <!-- data table start-->
-                            <div class="data-table mt-3 mt-lg-5">
-                                <h2 class="main-title">Review & Approve Uploaded Data</h2>
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link font-roboto_bold fg-secondary-85 active" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-selected="true">CIP by Job Openings</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link font-roboto_bold fg-secondary-85 " data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-selected="false">Degrees Conferred</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link font-roboto_bold fg-secondary-85 " data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-selected="false">SaaS Academic Program</button>
-                                    </li>
-                                    
-                                </ul>
-                                  
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="tab1" role="tabpanel">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped">
-                                                <thead>
-                                                  <tr>
-                                                    <th scope="col">CIP2020 Code</th>
-                                                    <th scope="col">CIP2020 Title</th>
-                                                    <th scope="col">SOC CODE</th>
-                                                    <th scope="col">SOC2018 Title</th>
-                                                    <th scope="col">SOC 2021 Employment
-                                                        in the thousands</th>
-                                                    <th scope="col">SOC 2031 Employment
-                                                        in the thousands</th>
-                                                    <th scope="col">Employment Change, 2021-31
-                                                        in the thousand</th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                  <tr>
-                                                    <th scope="row">01.0000</th>
-                                                    <td>Agriculture, General.</td>
-                                                    <td>19-1011</td>
-                                                    <td>Animal Scientists</td>
-                                                    <td>3.7</td>
-                                                    <td>4.2</td>
-                                                    <td>0.4</td>                        
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">01.0000</th>
-                                                    <td>Agriculture, General.</td>
-                                                    <td>19-1012</td>
-                                                    <td>Food Scientists and Technologists</td>
-                                                    <td>14.4</td>
-                                                    <td>15.3</td>
-                                                    <td>0.8</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">01.0101</th>
-                                                    <td>Agricultural Business and Management, General.</td>
-                                                    <td>25-1041</td>
-                                                    <td>Agricultural Sciences Teachers, Postsecondary</td>
-                                                    <td>10.9</td>
-                                                    <td>11.7</td>
-                                                    <td>0.8</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">01.0103</th>
-                                                    <td colspan="2">Agricultural Economics.</td>
-                                                    <td>25-1041</td>
-                                                    <td>Agricultural Sciences Teachers, Postsecondary</td>
-                                                    <td>10.9</td>
-                                                    <td>11.7</td>
-                                                    <td>0.8</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">01.0104</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">01.0000</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">01.0000</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <th scope="row">01.0103</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
-                                                  </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab2" role="tabpanel">tab2</div>
-                                    <div class="tab-pane" id="tab3" role="tabpanel">tab3</div>
-                                    
+                                    </form>
                                 </div>
+                
+                                <!-- data table start-->
+                                <div class="data-table mt-3 mt-lg-5">
+                                    <h2 class="main-title">Review & Approve Uploaded Data</h2>
+                                    <ul class="nav nav-tabs ps-3 border-bottom-0" id="myTab" role="tablist">
+                                        <li class="nav-item me-3 me-lg-5" role="presentation">
+                                          <button class="nav-link font-roboto_bold fg-secondary-85 font-20 active" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-selected="true">CIP by Job Openings</button>
+                                        </li>
+                                        <li class="nav-item me-3 me-lg-5" role="presentation">
+                                          <button class="nav-link font-roboto_bold fg-secondary-85 font-20 " data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-selected="false">Degrees Conferred</button>
+                                        </li>
+                                        <li class="nav-item me-3 me-lg-5" role="presentation">
+                                          <button class="nav-link font-roboto_bold fg-secondary-85 font-20 " data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-selected="false">SaaS Academic Program</button>
+                                        </li>
+                                        
+                                    </ul>
+                                      
+                                    <div class="tab-content rounded-10 bg-white custom-shadow">
+                                        <div class="tab-pane active" id="tab1" role="tabpanel">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped mb-0">
+                                                    <thead>
+                                                      <tr>
+                                                        <td class="fg-black font-14 font-roboto_bold align-middle py-3 lh-1" style="width: 10%;">CIP2020 Code</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 16%;">CIP2020 Title</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 10%;">SOC CODE</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 19%;">SOC2018 Title</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 15%;">
+                                                            <div class="d-inline-block text-start">
+                                                                <span>SOC 2021 Employment</span><br><i class="font-12 font-roboto lh-1">in the thousands</i>
+                                                            </div>
+                                                        </td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 15%;">
+                                                            <div class="d-inline-block text-start">
+                                                                <span>SOC 2031 Employment</span><br><i class="font-12 font-roboto lh-1">in the thousands</i>
+                                                            </div>
+                                                        </td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 15%;">
+                                                            <div class="d-inline-block text-start">
+                                                                <span>Employment Change, 2021-31</span><br><i class="font-12 font-roboto lh-1">in the thousand</i>
+                                                            </div>
+                                                        </td>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody class="font-14 fg-secondary font-roboto_medium">
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">01.0000</td>
+                                                        <td class="py-3 align-middle lh-1">Agriculture, General.</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">19-1011</td>
+                                                        <td class="py-3 align-middle lh-1">Animal Scientists</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">3.7</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">4.2</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">0.4</td>                        
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">01.0000</td>
+                                                        <td class="py-3 align-middle lh-1">Agriculture, General.</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">19-1012</td>
+                                                        <td class="py-3 align-middle lh-1">Food Scientists and Technologists</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">14.4</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">15.3</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">0.8</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">01.0101</td>
+                                                        <td class="py-3 align-middle lh-1">Agricultural Business and Management, General.</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">25-1041</td>
+                                                        <td class="py-3 align-middle lh-1">Agricultural Sciences Teachers, Postsecondary</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">10.9</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">11.7</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">0.8</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">01.0103</td>
+                                                        <td class="py-3 align-middle lh-1">Agricultural Economics.</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">25-1041</td>
+                                                        <td class="py-3 align-middle lh-1">Agricultural Sciences Teachers, Postsecondary</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">10.9</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">11.7</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">0.8</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">01.0104</td>
+                                                        <td class="py-3 align-middle lh-1">Farm/Farm and Ranch Management.</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">25-9021</td>
+                                                        <td class="py-3 align-middle lh-1">Farm and Home Management Educators</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">13.1</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">13.2</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">0.1</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">01.0000</td>
+                                                        <td class="py-3 align-middle lh-1">Agriculture, General.</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">19-1012</td>
+                                                        <td class="py-3 align-middle lh-1">Food Scientists and Technologists</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">14.4</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">15.3</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">0.8</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">01.0000</td>
+                                                        <td class="py-3 align-middle lh-1">Agriculture, General.</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">19-1011</td>
+                                                        <td class="py-3 align-middle lh-1">Animal Scientists</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">3.7</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">4.2</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">0.4</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">01.0103</td>
+                                                        <td class="py-3 align-middle lh-1">Agricultural Economics.</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">25-1041</td>
+                                                        <td class="py-3 align-middle lh-1">Agricultural Sciences Teachers, Postsecondary</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">10.9</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">11.7</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">0.8</td>
+                                                      </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab2" role="tabpanel">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped mb-0">
+                                                    <thead>
+                                                      <tr>
+                                                        <td class="fg-black font-14 font-roboto_bold align-middle py-3 lh-1" style="width: 7%;">Unit ID</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 14%;">Institution</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 11%;">State</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 17%;">CIP 2020</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 18%;">Award Level Code</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 10%;">Award Level</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 22%;">Degrees Conferred 2017</td>                                                        
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody class="font-14 fg-secondary font-roboto_medium">
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">100654</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Alabama A & M University</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">AL</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">1.0999</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">5</td>
+                                                        <td class="py-3 align-middle lh-1 text-start">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">6</td>                        
+                                                      </tr>                                                      
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">100654</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Alabama A & M University</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">AL</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">1.1001</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">5</td>
+                                                        <td class="py-3 align-middle lh-1 text-start">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">8</td>                        
+                                                      </tr>                                                      
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">100654</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Alabama A & M University</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">AL</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">1.1001</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">7</td>
+                                                        <td class="py-3 align-middle lh-1 text-start">Master's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">10</td>                        
+                                                      </tr>                                                      
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">100654</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Alabama A & M University</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">AL</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">1.1001</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">17</td>
+                                                        <td class="py-3 align-middle lh-1 text-start">Doctorate Research</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">4</td>                        
+                                                      </tr>                                                      
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">100654</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Alabama A & M University</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">AL</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">1.9999</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">5</td>
+                                                        <td class="py-3 align-middle lh-1 text-start">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">3</td>                        
+                                                      </tr>                                                      
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">100654</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Alabama A & M University</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">AL</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">1.9999</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">7</td>
+                                                        <td class="py-3 align-middle lh-1 text-start">Master's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">8</td>                        
+                                                      </tr>                                                      
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">100654</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Alabama A & M University</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">AL</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">1.9999</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">17</td>
+                                                        <td class="py-3 align-middle lh-1 text-start">Doctorate Research</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">2</td>                        
+                                                      </tr>                                                      
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">100654</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Alabama A & M University</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">AL</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">1.9999</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">5</td>
+                                                        <td class="py-3 align-middle lh-1 text-start">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">8</td>                        
+                                                      </tr>                                                      
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab3" role="tabpanel">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped mb-0">
+                                                    <thead>
+                                                      <tr>
+                                                        <td class="fg-black font-14 font-roboto_bold align-middle py-3 lh-1" style="width: 20%;">SSID</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 20%;">Student Graduation Year</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 20%;">Degree Award Level</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 20%;">Student Degree CIP Code</td>
+                                                        <td class="fg-black font-14 font-roboto_bold text-center align-middle py-3 lh-1" style="width: 20%;">Graduation Year NTR</td>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody class="font-14 fg-secondary font-roboto_medium">
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">558139783</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">2017</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">13.1202</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">22933</td>                      
+                                                      </tr>                                                    
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">947313117</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">2017</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">13.1202</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">21567</td>                      
+                                                      </tr>                                                    
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">810765422</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">2017</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">45.1001</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">28788</td>                      
+                                                      </tr>                                                    
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">947313117</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">2017</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">13.1202</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">21567</td>                      
+                                                      </tr>                                                    
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">778547851</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">2017</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">50.0102</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">28788</td>                      
+                                                      </tr>                                                    
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">947313117</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">2017</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">13.1202</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">21567</td>                      
+                                                      </tr>                                                    
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">438601701</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">2017</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">45.1001</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">22933</td>                      
+                                                      </tr>                                                    
+                                                      <tr>
+                                                        <td class="py-3 align-middle lh-1" scope="row">947313117</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">2017</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">Bachelor's</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">13.1202</td>
+                                                        <td class="py-3 align-middle lh-1 text-center">21567</td>                      
+                                                      </tr>                                                    
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- data table end-->
+                                
+                                <div class="d-flex justify-content-end mt-3 mt-lg-4">
+                                    <button class="btn btn-border me-4">Reject</button>
+                                    <button class="btn btn-primary">Approve</button>
+                                </div>
+
+                                
+                
                             </div>
-                            <!-- data table end-->
-                              
-            
                         </div>
-                    </div>
-                </section>
-                <!-- data-assessment section end -->
+                    </section>
+                    <!-- data-assessment section end -->
+                </div>
 
                 <!-- footer start -->
                 <footer class="page-footer bg-white w-100 px-4 py-3 text-end">

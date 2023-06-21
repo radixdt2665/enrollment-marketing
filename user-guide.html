@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/responsive.css" rel="stylesheet">
+    <title>User Guide</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header>
+        <nav class="navbar custom-nav py-1">
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <a class="navbar-brand py-1 m-0 small-side-nav" href="#"><img src="./assets/images/logo.svg"
+                            alt="Erollment Marketing" width="194" height="49" class="img-fluid nav-logo">
+                        <img src="./assets/images/logo-small.svg" alt="Erollment Marketing" width="48" height="49"
+                            class="img-fluid logo-small"></a>
+                    <button class="navbar-toggler d-block border-0 sidebar-toogle" type="button">
+                        <span class="menu-icon"><img src="./assets/images/menu_open.svg" alt="Menu Icon" width="18"
+                                height="12"></span>
+                    </button>
+                </div>
+                <div class="user-detail me-3">
+                    <div class="dropdown">
+                        <button class="bg-transparent border-0 fg-secondary-85 font-12 letter-spacing-0_4" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                            <span class="font-raleway pe-1">Welcome</span><span
+                                class="font-roboto_bold fg-secondary">John Doe</span> <span class="ms-2"><img
+                                    src="./assets/images/dropdown.svg" alt="Dropdwon Icon" width="12" height="7"></span>
+                        </button>
+                        <ul class="dropdown-menu border-0 custom-shadow letter-spacing-0_15"
+                            aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item px-3 py-2 font-15 fg-secondary font-roboto_medium" href="#"><img
+                                        src="./assets/images/person.svg" alt="Person Icon" width="13" height="13"><span
+                                        class="font-15 ps-2">My Profile</span></a></li>
+                            <li><a class="dropdown-item px-3 py-2 font-15 fg-secondary font-roboto_medium" href="#"><img
+                                        src="./assets/images/logout.svg" alt="Logout Icon" width="13" height="13"><span
+                                        class="font-15 ps-2">Logout</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar end -->
+
+    <div class="page-content">
+        <div class="d-flex">
+            <!-- side-nav start -->
+            <div class="side-nav px-2 py-4 bg-primary">
+                <ul class="list-unstyled side-nav-ul m-0">
+                    <li class="mt-2"><a href="javascript:void(0)"
+                            class="text-decoration-none nav-link font-17 fg-secondary active d-flex"><span
+                                class="pe-2"><img src="./assets/images/manage-data.svg" alt="Manage Data Icon"
+                                    height="20" width="20"></span><span class="nav-title">Load/Manage Data</span></a>
+                    </li>
+                    <li class="mt-2"><a href="javascript:void(0)"
+                            class="text-decoration-none nav-link font-17 fg-secondary d-flex"><span class="pe-2"><img
+                                    src="./assets/images/program-assessment.svg" alt="Program Assessment Icon"
+                                    height="20" width="20"></span><span class="nav-title">Program Assessment</span></a>
+                    </li>
+                    <li class="mt-2"><a href="javascript:void(0)"
+                            class="text-decoration-none nav-link font-17 fg-secondary d-flex"><span class="pe-2"><img
+                                    src="./assets/images/program-planner.svg" alt="Program Planner Icon" height="20"
+                                    width="20"></span><span class="nav-title">Program Planner</span></a></li>
+                    <li class="mt-2"><a href="javascript:void(0)"
+                            class="text-decoration-none nav-link font-17 fg-secondary d-flex"><span class="pe-2"><img
+                                    src="./assets/images/user-guide.svg" alt="User Guide Icon" height="20"
+                                    width="20"></span><span class="nav-title">User Guide</span></a></li>
+                </ul>
+            </div>
+            <!-- side-nav end -->
+
+
+            <div class="content-wrapper-main ml-auto overflow-auto">
+                <div class="content-body">
+                    <!-- data-assessment section start -->
+                    <section class="data-assessment-section page-content">
+                        <div class="data-assessment-main px-4">
+                            <div class="container-fluid">
+                                <h1 class="main-title">Academic Program Assessment User Guide</h1>
+                                <div class="row">
+                                    <div class="col-xl-3">
+                                        <div class="left-sec custom-shadow rounded-10 p-20 bg-white ">
+                                            <h2
+                                                class="form-title position-relative mb-2 mb-lg-4 font-20 font-raleway_semiBold fg-secondary-85">
+                                                Table of Contents</h2>
+                                            <ul class="p-0 m-0 list-unstyled table-content">
+                                                <li>
+                                                    <a href="#gettingStart" title="Getting Started">Getting Started</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#licensesCred"
+                                                        title="Managing Licenses and Credentials">Managing Licenses and
+                                                        Credentials</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#sassModules" title="SaaS Modules Overview">SaaS Modules
+                                                        Overview</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#loadingData" title="Loading Data">Loading Data</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#runRateModel" title="Creating a Run Rate Model">Creating a
+                                                        Run Rate Model</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#excuSummary" title="Executive Summary">Executive
+                                                        Summary</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#scenSimulator" title="Scenario Simulator">Scenario
+                                                        Simulator</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#glossary" title="Glossary">Glossary</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-9">
+                                        <div class="right-sec custom-shadow rounded-10 p-20 bg-white">
+                                            <h2
+                                                class="form-title position-relative mb-2 mb-lg-4 font-20 font-raleway_semiBold fg-secondary-85">
+                                                User Guide Content</h2>
+                                            <p>Welcome to the 3E Academic Program Assessment. This user guide will help
+                                                you get started.</p>
+                                            <p>For quick reference:</p>
+                                            <p>The 3E SaaS platform can be accessed at:
+                                                https://saas-stage.3enrollment.com</p>
+                                            <p>Technical support can be requested through the platform or by emailing
+                                                software.support@3enrollment.com.</p>
+                                            <h3 id="gettingStart">Getting Started</h3>
+                                            <ol>
+                                                <li>To access the 3E SaaS platform, type in or paste
+                                                    https://saas-stage.3enrollment.com into your browser (Chrome or Edge
+                                                    are preferred browsers). Bookmark or favorite this URL.</li>
+                                                <li>Enter your email and password credentials that were sent to you by
+                                                    3E. If you do not have your credentials, you may email
+                                                    software.support@3enrollment.com and 3E will resend your
+                                                    credentials.</li>
+                                                <li>Once logged in, you can manage your log-in credentials and create
+                                                    and manage additional users on your campus</li>
+                                            </ol>
+                                            <h3 id="licensesCred">Managing Licenses and Credentials</h3>
+                                            <ol>
+                                                <li>From the home screen, locate the gear icon</li>
+                                                <li>in the top right navigation menu.</li>
+                                                <li>Click on the gear to select managing your profile or the profiles of
+                                                    additional users.</li>
+                                                <li>Selecting Profile will allow you to update your password by entering
+                                                    and confirming your new password in the prompts.</li>
+                                                <li>Selecting Users will allow you to create new and manage existing
+                                                    users:</li>
+                                                <li>To create new users, click the Add New User button and follow the
+                                                    prompt, filling in username, email, and temporary password.</li>
+                                                <li>There are two types of user roles: Client Admin and Client User.
+                                                    Checking the box titled Admin will create that user as a Client
+                                                    Admin. Leaving that bock unchecked will create that user as a Client
+                                                    User.</li>
+                                                <li>Client Admins can create and manage users in addition to loading
+                                                    data and creating and managing run rate models and scenarios. Client
+                                                    Users can only load data and create and manage run rate models and
+                                                    scenarios.</li>
+                                                <li>Editing a Client User will allow the Client Admin to change the user
+                                                    password and role.</li>
+                                            </ol>
+                                            <h3 class="sassModules">SaaS Modules Overview</h3>
+                                            <ol>
+                                                <li>This user guide will provide additional details on how to use these
+                                                    modules in subsequent sections of this user guide. First, let’s get
+                                                    familiar with the platform layout and navigation. From your home
+                                                    screen you can navigate to five different modules in the platform,
+                                                    as indicated with the five yellow and clickable circles:</li>
+                                                <li>Executive Summary – reporting dashboard that shows the results of
+                                                    the run rate as well as supporting data that gives context to the
+                                                    run rate results.</li>
+                                                <li>View 3E Enrollment Run Rate – in this module the user can see the
+                                                    population, college going, and mobility projections as well as the
+                                                    projecting conversion rates that lead to the run rate projections.
+                                                </li>
+                                                <li>By clicking on the Detailed Run Rate button, the user can review the
+                                                    run rate data by state or by race/ethnicity to understand trends
+                                                    that shape their run rates.</li>
+                                                <li>Clicking on Run Rate by State provides a table that shows the
+                                                    population and market details as well as the anticipated conversion
+                                                    rates and funnel metrics based on your recent performance and
+                                                    anticipated market conditions by each state.</li>
+                                                <li>Clicking on Scenario Planning navigates the user to the Scenario
+                                                    Simulator (see Scenario Simulator section below).</li>
+                                                <li>Create and Manage Run Rate Models – in this module the user can
+                                                    create new run rate models, delete unwanted run rate models, or
+                                                    favorite a model to view in the Executive Summary and Scenario
+                                                    Simulator. (See Creating Run Rate Models below).</li>
+                                                <li>User Guide – the user how to section and includes a copy of this
+                                                    user guide.</li>
+                                                <li>Scenario Simulator – allows the user to adjust anticipated
+                                                    population and conversion data to see the impact on future
+                                                    enrollment and net tuition revenue.</li>
+                                                <li>Top Navigation Menu - allows the user to access/return to the home
+                                                    screen, manage their profile, refresh the page, seek help, and
+                                                    provide feedback or ideas for future releases.</li>
+                                            </ol>
+                                            <h3 id="loadingData">Loading Data</h3>
+                                            <ol>
+                                                <li>The 3E Run Rate uses data from the three most recently enrolled
+                                                    classes. For this reason, data needs to be loaded only once annually
+                                                    – typically after the fall census date. Here are the steps needed to
+                                                    load data directly into the platform:</li>
+                                                <li>Refer to the 3E Run Rate Data Layout and the 3E Run Rate Data Sample
+                                                    File to make certain that you have the correct data format.</li>
+                                                <li>From the Home Screen, click on the Load/Manage My Data link next to
+                                                    your name in the top navigation bar.</li>
+                                                <li>Click the Choose File button.</li>
+                                                <li>Select your file and click the blue Upload button.</li>
+                                                <li>Once uploaded, the teal status bar will indicate how many records
+                                                    were loaded.</li>
+                                                <li>Click on the Overall link to see the funnel counts of your historic
+                                                    data.</li>
+                                                <li>If the counts are correct, approve your data by clicking the approve
+                                                    button on the right-hand side, directly under the gold header
+                                                    section.</li>
+                                                <li>If the counts are incorrect, you may correct your data file and
+                                                    initiate the upload process with your corrected data.</li>
+                                            </ol>
+
+                                            <h3 id="runRateModel">Creating a Run Rate Model</h3>
+                                            <ol>
+                                                <li>Once data is loaded into the platform, users may build run rate models.</li>
+                                                <li>From Home Screen, click on the yellow menu circle titled Create and Manage Run rate Models to bring up the Run Rate Model menu.</li>
+                                                <li>To create a new run rate model, click the Create New Model button on the right, underneath the yellow banner.</li>
+                                                <li>Run rates are created using the client’s institutional historical data, 3E’s population and market variable data, and inputs from the user. The teal boxes on the Create New Model page are fields for the user to input:
+                                                    Input year – while the run rate model will project seven future years, entering the input year allows the user to see that specific year in more detailed views in the Detailed Run Rate screen.
+                                                    Input Weights on Conversion Rates – the run rate models use recent historic conversion as a component of the projection calculations. These fields allow the user to weight each of the three historic years to account for years that are anomalies. For example, a user may have deployed a strategy in 2022 that they will continue to use and may wish to increase the weight given to the 2022 conversion. Note – total weights across all three years must equal 1.0.
+                                                    Application Goals – enter application goals here so that the run rate models may provide a comparison against future projections. Note, leaving these fields blank will still allow the run rate model to calculate.
+                                                    Enrollment Goals - enter enrolled student goals here so that the run rate models may provide a comparison against future projections. Note, leaving these fields blank will still allow the run rate model to calculate.
+                                                    Net Tuition Revenue - enter total freshmen net revenue goals here so that the run rate models may provide a comparison against future projections. Note, leaving these fields blank will still allow the run rate model to calculate.</li>
+                                                <li>Click Save and name your run rate.</li>
+                                                <li>Once saved you may see the new run rate model by clicking the Home Screen button and then clicking the yellow Create and Manage Run Rate Models.</li>
+                                                <li>Find your new run rate and favorite it by clicking the star to the left of the run rate.</li>
+                                                <li>To see you run rate output, click the Executive Summary button to the right of the listed run rate. Note: Favoriting a run rate will allow the user to see the run rate details in the Executive Summary as well as the View 3E Run Rate modules. The Scenario Simulator module also uses the favorited run rate.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- data-assessment section end -->
+                </div>
+
+                <!-- footer start -->
+                <footer class="page-footer bg-white w-100 px-4 py-3 text-end">
+                    <p class="m-0 font-12 fg-secondary-40">&copy; 2023, 3 Enrollment Marketing</p>
+                </footer>
+                <!-- footer end -->
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <!-- custom js -->
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>
