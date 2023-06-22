@@ -166,7 +166,7 @@ body.small-side-nav .logo-small {
     height: 3px;
     width: 100%;
 }
-.upload-data-section .data-table .nav-tabs .nav-link.active,.upload-data-section .data-table .nav-tabs .nav-link:hover{
+.data-table .nav-tabs .nav-link.active,.data-table .nav-tabs .nav-link:hover{
     border : 0;
     border-bottom: 4px solid var(--primary);
     color: var(--secondary-85);
@@ -178,36 +178,36 @@ body.small-side-nav .logo-small {
     color: var(--secondary-85);
     background: transparent;
 } */
-.upload-data-section .data-table .nav-tabs .nav-link{
+.data-table .nav-tabs .nav-link{
     border : 0;
     border-bottom: 4px solid #63666A40;
     color: var(--secondary-85);
     background: transparent;
 }
-.upload-data-section .data-table .table-striped>tbody>tr:nth-of-type(odd)>* {
+.data-table .table-striped>tbody>tr:nth-of-type(odd)>* {
     --bs-table-accent-bg: var(--secondary-3);
     color: var(--bs-table-striped-color);
     background-color: var(--secondary-3);
 }
-.upload-data-section .data-table .table>:not(caption)>*>*{
+.data-table .table>:not(caption)>*>*{
     border-color: var(--secondary-10);
 }
 .upload-data-section .data-table tbody {
     border-top: 0;
 }
-.upload-data-section .data-table .table-striped tr td:first-child {
+.data-table .table-striped tr td:first-child {
     padding-left: 20px;
 }
-.upload-data-section .data-table .table-striped>tbody>tr:nth-of-type(odd) td:first-child{
+.data-table .table-striped>tbody>tr:nth-of-type(odd) td:first-child{
     padding-left: 20px;
 }
-.upload-data-section .data-table .table-striped tr td:last-child {
+.data-table .table-striped tr td:last-child {
     padding-right: 20px;
 }
-.upload-data-section .data-table .table-striped>tbody>tr:nth-of-type(odd) td:last-child{
+.data-table .table-striped>tbody>tr:nth-of-type(odd) td:last-child{
     padding-right: 20px;
 }
-.upload-data-section .data-table .table thead tr td{
+.data-table .table thead tr td{
     padding-top: 22px;
     padding-bottom: 22px;
 }
@@ -240,7 +240,167 @@ body.small-side-nav .logo-small {
     border: 1px solid var(--secondary-25);
     border-radius: 8px;
 }
+.program-assessment-section .chart-list:hover{
+    cursor: -webkit-grab; 
+    cursor: grab;
+}
+.program-assessment-section .accordion-button:not(.collapsed){
+    background-color: transparent;
+    box-shadow: none;
+}
+.program-assessment-section .accordion-button:focus{
+    box-shadow: none;
+}
+.program-assessment-section .btn-check:focus+.btn, 
+.program-assessment-section .btn:focus{
+    border-color: var(--primary);
+    box-shadow: none;
+}
+.program-assessment-section .dropdown-menu{
+    min-width: 410px;
+
+}
+.program-assessment-section select.form-control{
+    background-image: url("/assets/images/dropdown-custom-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: right 15px center;
+}
+.program-assessment-section .accordion-button::after{
+    background-image: url("/assets/images/dropdown.svg");
+    background-size: 12px;
+    height: 12px;
+    width: 12px;
+}
 /* program-assessment-section css end */
-  
 
 
+/* select2 css start */  
+.select2{
+    width: 100% !important;
+}
+.select2-container--default .select2-selection--multiple{
+    border: 1px solid var(--secondary-25);
+    border-radius: 8px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    font-size: var(--font-12);
+    font-family: var(--raleway);
+    letter-spacing: var(--letter-spacing-0_4);
+    background-color: var(--secondary-3);
+    border: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    background-color: var(--secondary-25);
+    height: 12px;
+    width: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/images/close.svg");
+    background-repeat: no-repeat;
+    color: transparent;
+    background-position: center;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{
+    color: transparent;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+    display: flex;
+    align-items: center;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    min-height: 37px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 37px;
+    position: relative;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 25px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__clear{
+    position: absolute;
+    right: 0;
+    margin-top: 4px;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border-color: var(--secondary-25);
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    background-color: var(--primary-25);
+    color: var(--secondary);
+}
+.select2-dropdown{
+    border-color: var(--secondary-25);
+}
+.select2-results__option{
+    font-size: var(--font-14);
+    font-family: var(--raleway);
+}
+/* select2 css end */
+
+
+
+/* program-planner-section css start */
+.program-planner-section .accordion-button:not(.collapsed){
+    background-color: transparent;
+    box-shadow: none;
+}
+.program-planner-section .btn-check:focus+.btn, 
+.program-planner-section .btn:focus{
+    border-color: var(--primary);
+    box-shadow: none;
+}
+.program-planner-section .dropdown-menu{
+    min-width: 410px;
+
+}
+.program-planner-section select.form-control{
+    background-image: url("/assets/images/dropdown-custom-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: right 15px center;
+}
+.program-planner-section .accordion-button::after{
+    background-image: url("/assets/images/dropdown.svg");
+    background-size: 12px;
+    height: 12px;
+    width: 12px;
+}
+.program-planner-section .accordion-button:focus{
+    box-shadow: none;
+}
+.program-planner-data-table-section .data-table tbody {
+    border-top: 0;
+}
+.data-table .table-input{
+    width: 80px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 4px;
+    border: 1px solid var(--primary);
+}
+.data-table .table-striped>tbody>tr:nth-of-type(odd) td:last-child.fg-red{
+    color: var(--error-fg);
+}
+.program-planner-data-table-section button:focus:not(:focus-visible){
+    box-shadow: none;
+}
+.program-planner-data-table-section .page-link.page-number{
+    border-radius: 4px;
+    background-color: var(--secondary-25);
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.program-planner-data-table-section .page-link:focus,
+.program-planner-data-table-section .page-link:hover{
+    background-color: var(--primary);
+    box-shadow: none;
+}
+/* program-planner-section css end */

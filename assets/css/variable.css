@@ -246,6 +246,12 @@ body {
 .bg-secondary-75 {
     background-color: var(--secondary-75);
 }
+.bg-primary-10{
+    background-color: var(--primary-10);
+}
+.bg-primary-25{
+    background-color: var(--primary-25);
+}
 
 .info-bg{
     background-color: var(--info-bg);
@@ -264,6 +270,9 @@ body {
 }
 .fg-black {
     color: var(--color-black);
+}
+.fg-red{
+    color: var(--error-fg);
 }
 
 /* width */

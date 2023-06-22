@@ -33,8 +33,21 @@ $(document).ready(function() {
             $('.content-wrapper-main').css("width", "calc(100% - " + $('.side-nav').outerWidth() + "px)")
         }
     }
-
+    $("#academicProgram").select2({
+        allowClear: true
+    });
+    $("#institution").select2({
+            allowClear: true
+    });
+    $("#academicProgram2").select2({
+        allowClear: true
+    });
+    $("#awradLevel2").select2({
+            allowClear: true
+    });
 
    
+
 });
+
 
