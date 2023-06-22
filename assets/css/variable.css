@@ -106,7 +106,9 @@
     --roboto_black: 'roboto_black', sans-serif;
 
     --font-24: 24px;
+    --font-22: 22px;
     --font-20: 20px;
+    --font-18: 18px;
     --font-17: 17px;
     --font-14: 14px;
     --font-15: 15px;
@@ -204,10 +206,16 @@ body {
 .font-24 {
     font-size: var(--font-24);
 }
+.font-22 {
+    font-size: var(--font-22);
+}
 .font-20 {
     font-size: var(--font-20);
 }
 
+.font-18 {
+    font-size: var(--font-18);
+}
 .font-17 {
     font-size: var(--font-17);
 }
