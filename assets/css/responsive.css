@@ -1,6 +1,44 @@
+
+
+
+@media(min-width: 576px){
+    .program-planner-page .modal-dialog{
+        max-width: 576px;
+    }
+}
+@media(min-width:1024px){
+    .upload-data-section .w-500 {
+        max-width: 508px;
+        width: 100%;
+    }
+}
+
+
+@media(max-width:1440px){
+    .login-card{
+        max-width: 1100px;
+    }
+    .login-form-sec {
+        padding: 75px 142px 40px;
+    }
+    .login-content-sec{
+        padding: 78px 50px;
+    }
+}
+
 @media (max-width: 1199px) {
-    :root {
+    :root {       
         --font-24: 20px;
+        --font-22: 20px;
+        --font-20: 18px;
+        --font-18: 16px;
+        --font-17: 15px;
+        --font-15: 14px;
+        --font-14: 13px;
+        --font-12: 11px;
+        --font-5: 5px;
+        --letter-spacing-0_15: 0.15px;
+        --letter-spacing-0_4: 0.4px;        
     }
     .login-content-sec {
         padding: 32px;
@@ -13,9 +51,3 @@
     }
 }
 
-
-@media(min-width: 576px){
-    .program-planner-page .modal-dialog{
-        max-width: 576px;
-    }
-}

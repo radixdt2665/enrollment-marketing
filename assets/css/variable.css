@@ -283,7 +283,7 @@ body {
     color: var(--color-black);
 }
 .fg-red{
-    color: var(--error-fg);
+    color: var(--error-fg) !important;
 }
 .fg-secondary-50{
     color: var(--secondary-50);
@@ -362,7 +362,7 @@ body {
     /* margin-top: 36px; */
     font-size: var(--font-24);
     color: var(--secondary-85);
-    font-family: var(--raleway_bold);
+    font-family: var(--raleway_extraBold);
     margin-bottom: 14px;
     padding-left: 22px;
     letter-spacing: var(--letter-spacing-0_15);

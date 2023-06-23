@@ -232,6 +232,11 @@ textarea.form-control{
     padding-top: 22px;
     padding-bottom: 22px;
 }
+.upload-data-page .data-table .table-striped>tbody>tr td,
+.upload-data-page .data-table .table-striped>thead>tr td{
+    height: 50px;
+    line-height: 1.2;
+}
 /* upload-data-section css end */
 
 
@@ -276,6 +281,9 @@ textarea.form-control{
     height: 12px;
     width: 12px;
 }
+.program-assessment-page .chart-section .form-title::before{
+    left: -24px;
+}
 /* program-assessment-section css end */
 
 
@@ -288,11 +296,12 @@ textarea.form-control{
     border-radius: 8px;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice{
-    font-size: var(--font-12);
-    font-family: var(--raleway);
+    font-size: var(--font-14);
+    font-family: var(--roboto);
     letter-spacing: var(--letter-spacing-0_4);
     background-color: var(--secondary-3);
     border: 0;
+    line-height: 24px;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
     background-color: var(--secondary-25);
@@ -387,9 +396,18 @@ textarea.form-control{
     border-radius: 4px;
     border: 1px solid var(--primary);
 }
-.data-table .table-striped>tbody>tr:nth-of-type(odd) td:last-child.fg-red{
-    color: var(--error-fg);
+.program-planner-data-table-section .data-table .table-input:focus-visible{
+    outline: 0;
 }
+.program-planner-data-table-section ::-webkit-inner-spin-button{
+    display: none;
+}
+.program-planner-data-table-section .data-table .table-striped>tbody>tr td,
+.program-planner-data-table-section .data-table .table-striped>thead>tr td{
+    height: 50px;
+    line-height: 1.2;
+}
+
 .program-planner-data-table-section button:focus:not(:focus-visible){
     box-shadow: none;
 }
@@ -401,17 +419,23 @@ textarea.form-control{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 .program-planner-data-table-section .page-link:focus,
-.program-planner-data-table-section .page-link:hover{
+.program-planner-data-table-section .page-link:hover,
+.program-planner-data-table-section .page-link.active{
     background-color: var(--primary);
     box-shadow: none;
+    border-color: var(--primary);
 }
 .program-planner-page .modal .form-title::before{
     left: -24px;
 }
 .program-planner-page .modal .form-title{
     font-family: var(--font-raleway_bold);
+}
+.program-planner-data-table-section .data-table #tab2 .table-striped tr td:last-child{
+    padding-right: 60px;
 }
 /* program-planner-section css end */
 
