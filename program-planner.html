@@ -26,8 +26,11 @@
                         <img src="./assets/images/logo-small.svg" alt="Erollment Marketing" width="48" height="49"
                             class="img-fluid logo-small"></a>
                     <button class="navbar-toggler d-block border-0 sidebar-toogle" type="button">
-                        <span class="menu-icon"><img src="./assets/images/menu_open.svg" alt="Menu Icon" width="18"
-                                height="12"></span>
+                        <span class="menu-icon icon-open"><img src="./assets/images/open-menu-arrow.svg" alt="Menu Icon" width="22"
+                                height="22"></span>
+                        <span class="menu-icon icon-close"><img src="./assets/images/close-menu-arrow.svg" alt="Menu Icon" width="22"
+                                height="22"></span>
+                        
                     </button>
                 </div>
                 <div class="user-detail me-3">
@@ -54,7 +57,7 @@
     </header>
     <!-- navbar end -->
 
-    <div class="page-content">
+    <div class="page-content program-planner-page">
         <div class="d-flex">
             <!-- side-nav start -->
             <div class="side-nav px-2 py-4 bg-primary">
@@ -78,11 +81,14 @@
                                     src="./assets/images/user-guide.svg" alt="User Guide Icon" height="20"
                                     width="20"></span><span class="nav-title">User Guide</span></a></li>
                 </ul>
+                <span class="overlay-logo d-block">
+                    <img src="./assets/images/logo-overlay.svg" alt="Overlay Logo" width="191" height="195">
+                </span>
             </div>
             <!-- side-nav end -->
 
-        
-            <div class="content-wrapper-main ml-auto overflow-auto program-planner-page">
+
+            <div class="content-wrapper-main ml-auto overflow-auto">
                 <div class="content-body">
                     <!-- program-planner-form-section start -->
                     <section class="program-planner-section page-content">
@@ -94,24 +100,32 @@
                                         <div class="accordion" id="accordionExample">
                                             <div class="accordion-item border-0">
                                                 <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                                        <h3 class="form-title position-relative mb-0">Academic Program Parameters</h3>
+                                                    <button class="accordion-button p-0 collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                                        <h3 class="form-title position-relative mb-0">Academic Program
+                                                            Parameters</h3>
                                                     </button>
                                                 </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body px-0 pb-0 pt-4 mt-1">                                                        
+                                                <div id="collapseOne" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body px-0 pb-0 pt-4 mt-1">
                                                         <div class="form-floating pb-2 mb-4 icon-form-control">
-                                                            <select multiple id="academicProgram2" class="js-states form-control" data-allow-clear="1">
-                                                                <option selected>04.0401 Environmental Design/ Architecture</option>
+                                                            <select multiple id="academicProgram2"
+                                                                class="js-states form-control" data-allow-clear="1">
+                                                                <option selected>04.0401 Environmental Design/
+                                                                    Architecture</option>
                                                                 <option>10.0301 Graphic Communications, General</option>
-                                                                <option>13.1202 Elementary Education and Teaching.</option>
+                                                                <option>13.1202 Elementary Education and Teaching.
+                                                                </option>
                                                                 <option>14.0701 Chemical Engineering</option>
-                                                                <option>26.0101 Biology/Biological Sciences, General</option>
+                                                                <option>26.0101 Biology/Biological Sciences, General
+                                                                </option>
                                                             </select>
                                                             <label for="floatingInput">Academic Program</label>
-                                                        </div>                                                        
+                                                        </div>
                                                         <div class="form-floating mb-2 icon-form-control">
-                                                            <select multiple id="awradLevel2" class="js-states form-control" data-allow-clear="1">
+                                                            <select multiple id="awradLevel2"
+                                                                class="js-states form-control" data-allow-clear="1">
                                                                 <option selected>05 Bachelor's</option>
                                                                 <option value="1">07 Bachelor's</option>
                                                                 <option value="2">08 Bachelor's</option>
@@ -140,7 +154,8 @@
                                         <div class="custom-shadow rounded-10 p-20 bg-white">
                                             <div class="d-flex justify-content-between">
                                                 <h3 class="form-title position-relative mb-0">Degrees Conferred</h3>
-                                                <span><img src="./assets/images/more_horiz.svg" alt="More Horizontal Icon"></span>
+                                                <span><img src="./assets/images/more_horiz.svg"
+                                                        alt="More Horizontal Icon"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +163,8 @@
                                         <div class="custom-shadow rounded-10 p-20 bg-white">
                                             <div class="d-flex justify-content-between">
                                                 <h3 class="form-title position-relative mb-0">Net Tution Revenue</h3>
-                                                <span><img src="./assets/images/more_horiz.svg" alt="More Horizontal Icon"></span>
+                                                <span><img src="./assets/images/more_horiz.svg"
+                                                        alt="More Horizontal Icon"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -170,27 +186,51 @@
                                     <div class="d-flex justify-content-between">
                                         <ul class="nav nav-tabs ps-3 border-bottom-0" id="myTab" role="tablist">
                                             <li class="nav-item me-3 me-lg-5" role="presentation">
-                                                <button class="nav-link font-raleway_semiBold fg-secondary-85 font-20 active" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-selected="false">5 Year Degree Conferred Trend (2017-2021)</button>
+                                                <button
+                                                    class="nav-link font-raleway_semiBold fg-secondary-85 font-20 active"
+                                                    data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab"
+                                                    aria-selected="false">5 Year Degree Conferred Trend
+                                                    (2017-2021)</button>
                                             </li>
                                             <li class="nav-item me-3 me-lg-5" role="presentation">
-                                                <button class="nav-link font-raleway_semiBold fg-secondary-85 font-20" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-selected="false">What If Scenario Planning</button>
+                                                <button class="nav-link font-raleway_semiBold fg-secondary-85 font-20"
+                                                    data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"
+                                                    aria-selected="false">What If Scenario Planning</button>
                                             </li>
                                         </ul>
                                         <div class="dropdown">
-                                            <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                              <img src="./assets/images/dropdown-menu.svg" alt="">
+                                            <button class="btn p-0" type="button" id="dropdownMenuButton1"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="./assets/images/dropdown-menu.svg" alt="">
                                             </button>
-                                            <ul class="dropdown-menu custom-shadow border-0 rounded-10" aria-labelledby="dropdownMenuButton1">
-                                              <li><a class="dropdown-item py-2" href="#"><span class="me-2"><img src="./assets/images/calculate.svg" alt=""></span><span class="font-15 font-roboto_medium">Recalculate</span></a></li>
-                                              <li><a class="dropdown-item py-2" href="#"><span class="me-2"><img src="./assets/images/assignment_add.svg" alt=""></span><span class="font-15 font-roboto_medium">Create New</span></a></li>
-                                              <li><a class="dropdown-item py-2" href="#"><span class="me-2"><img src="./assets/images/save.svg" alt=""></span><span class="font-15 font-roboto_medium">Save</span></a></li>
-                                              <li><a class="dropdown-item py-2" href="#"><span class="me-2"><img src="./assets/images/export.svg" alt=""></span><span class="font-15 font-roboto_medium">Export</span></a></li>
-                                              <li><a class="dropdown-item py-2" href="#"><span class="me-2"><img src="./assets/images/delete.svg" alt=""></span><span class="font-15 font-roboto_medium">Delete</span></a></li>
+                                            <ul class="dropdown-menu custom-shadow border-0 rounded-10"
+                                                aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item py-2" href="#"><span class="me-2"><img
+                                                                src="./assets/images/calculate.svg" alt=""></span><span
+                                                            class="font-15 font-roboto_medium">Recalculate</span></a>
+                                                </li>
+                                                <li><a class="dropdown-item py-2" data-bs-toggle="modal"
+                                                        data-bs-target="#createNewModal" href="javascript:void(0)"><span
+                                                            class="me-2"><img src="./assets/images/assignment_add.svg"
+                                                                alt=""></span><span
+                                                            class="font-15 font-roboto_medium">Create New</span></a>
+                                                </li>
+                                                <li><a class="dropdown-item py-2" data-bs-toggle="modal"
+                                                        data-bs-target="#saveModal" href="javascript:void(0)"><span
+                                                            class="me-2"><img src="./assets/images/save.svg"
+                                                                alt=""></span><span
+                                                            class="font-15 font-roboto_medium">Save</span></a></li>
+                                                <li><a class="dropdown-item py-2" href="#"><span class="me-2"><img
+                                                                src="./assets/images/export.svg" alt=""></span><span
+                                                            class="font-15 font-roboto_medium">Export</span></a></li>
+                                                <li><a class="dropdown-item py-2" href="#"><span class="me-2"><img
+                                                                src="./assets/images/delete.svg" alt=""></span><span
+                                                            class="font-15 font-roboto_medium">Delete</span></a></li>
                                             </ul>
                                         </div>
 
                                     </div>
-                                        
+
                                     <div class="tab-content ">
                                         <div class="tab-pane active" id="tab1" role="tabpanel">
                                             <div class="rounded-10 bg-white custom-shadow">
@@ -198,109 +238,164 @@
                                                     <table class="table table-striped mb-0">
                                                         <thead>
                                                             <tr>
-                                                                <td class="fg-black font-14 font-roboto_bold align-middle lh-1" style="width: 15%;">Academic Program</td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 12%;">Award Level</td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 10%;">
+                                                                <td class="fg-black font-14 font-roboto_bold align-middle lh-1"
+                                                                    style="width: 15%;">Academic Program</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 12%;">Award Level</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 10%;">
                                                                     <div class="d-inline-block text-start">
                                                                         <span>Job Openings</span><br><span>2021</span>
                                                                     </div>
                                                                 </td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 10%;">
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 10%;">
                                                                     <div class="d-inline-block text-start">
                                                                         <span>Job Openings</span><br><span>2031</span>
                                                                     </div>
                                                                 </td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 11%;">Growth</td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 11%;">Growth, %</td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 11%;">Degrees National</td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 10%;">Degrees State</td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 12%;">Degrees Institution</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 11%;">Growth</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 11%;">Growth, %</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 11%;">Degrees National</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 10%;">Degrees State</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 12%;">Degrees Institution</td>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="font-14 fg-secondary font-roboto_medium">
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Environmental Design/ Architecture</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">344,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">352,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">8</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">2.4%</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">41</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">0</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">0</td>    
-                                                            </tr>                                                    
+                                                                <td colspan="9" class="bg-secondary-50 text-white py-2">
+                                                                    Total
+                                                                </td>
+                                                            </tr>
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Graphics Communications, General</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">26,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">20,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center fg-red">-6</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">-22.7%</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">0</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">0</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">0</td>    
-                                                            </tr>                                                    
+                                                                <td class="py-2 align-middle lh-1" scope="row">
+                                                                    Environmental Design/ Architecture</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">344,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">352,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">8</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">2.4%</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">41</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">0</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">0</td>
+                                                            </tr>
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Elementary Education and Teaching</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">1,439,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">1,500,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">61</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">4.3%</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">351</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">17</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center fg-red">-1</td>    
-                                                            </tr>  
+                                                                <td class="py-2 align-middle lh-1" scope="row">Graphics
+                                                                    Communications, General</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">26,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">20,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center fg-red">-6
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">-22.7%
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">0</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">0</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">0</td>
+                                                            </tr>
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Bioengineering and Biochemical Engineering</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">255,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">267,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">12</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">4.8%</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">132</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">91</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">0</td>    
-                                                            </tr>                                                   
+                                                                <td class="py-2 align-middle lh-1" scope="row">
+                                                                    Elementary Education and Teaching</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">1,439,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">1,500,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">61</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">4.3%</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">351</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">17</td>
+                                                                <td class="py-2 align-middle lh-1 text-center fg-red">-1
+                                                                </td>
+                                                            </tr>
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Chemical Engineering</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">264,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">278,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">14</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">5.4%</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">438</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">149</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">0</td>    
-                                                            </tr>                                                   
+                                                                <td class="py-2 align-middle lh-1" scope="row">
+                                                                    Bioengineering and Biochemical Engineering</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">255,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">267,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">12</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">4.8%</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">132</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">91</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">0</td>
+                                                            </tr>
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Biology/ Biological Sciences, General</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">1,389,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">1,464,000</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">76</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">5.4%</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">615</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">500</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">52</td>    
-                                                            </tr>                                                   
+                                                                <td class="py-2 align-middle lh-1" scope="row">Chemical
+                                                                    Engineering</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">264,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">278,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">14</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">5.4%</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">438</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">149</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-2 align-middle lh-1" scope="row">Biology/
+                                                                    Biological Sciences, General</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">1,389,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">1,464,000
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">76</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">5.4%</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">615</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">500</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">52</td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
-                                                </div>                                                
+                                                </div>
                                             </div>
                                             <nav aria-label="Page navigation example" class="mt-3 pt-2">
                                                 <ul class="pagination justify-content-end">
-                                                  <li class="page-item me-3">
-                                                    <a class="page-link border-0 bg-transparent p-0"><img src="./assets/images/pagination-left-arrow.svg" alt=""></a>
-                                                  </li>
-                                                  <li class="page-item me-3"><a class="font-raleway font-12 text-white page-number page-link" href="#">1</a></li>
-                                                  <li class="page-item me-3"><a class="font-raleway font-12 text-white page-number page-link" href="#">2</a></li>
-                                                  <li class="page-item me-3"><a class="font-raleway font-12 text-white page-number page-link" href="#">3</a></li>
-                                                  <li class="page-item me-3"><a class="font-raleway font-12 text-white page-number page-link" href="#">4</a></li>
-                                                  <li class="page-item me-3"><a class="font-raleway font-12 text-white page-number page-link" href="#">5</a></li>
-                                                  <li class="page-item">
-                                                    <a class="page-link border-0 bg-transparent p-0" href="#"><img src="./assets/images/pagination-right-arrow.svg" alt=""></a>
-                                                  </li>
+                                                    <li class="page-item me-3">
+                                                        <a class="page-link border-0 bg-transparent p-0"><img
+                                                                src="./assets/images/pagination-left-arrow.svg"
+                                                                alt=""></a>
+                                                    </li>
+                                                    <li class="page-item me-3"><a
+                                                            class="font-raleway font-12 text-white page-number page-link"
+                                                            href="#">1</a></li>
+                                                    <li class="page-item me-3"><a
+                                                            class="font-raleway font-12 text-white page-number page-link"
+                                                            href="#">2</a></li>
+                                                    <li class="page-item me-3"><a
+                                                            class="font-raleway font-12 text-white page-number page-link"
+                                                            href="#">3</a></li>
+                                                    <li class="page-item me-3"><a
+                                                            class="font-raleway font-12 text-white page-number page-link"
+                                                            href="#">4</a></li>
+                                                    <li class="page-item me-3"><a
+                                                            class="font-raleway font-12 text-white page-number page-link"
+                                                            href="#">5</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link border-0 bg-transparent p-0" href="#"><img
+                                                                src="./assets/images/pagination-right-arrow.svg"
+                                                                alt=""></a>
+                                                    </li>
                                                 </ul>
                                             </nav>
                                         </div>
@@ -310,144 +405,268 @@
                                                     <table class="table table-striped mb-0">
                                                         <thead>
                                                             <tr>
-                                                                <td class="fg-black font-14 font-roboto_bold align-middle lh-1" style="width: 13%;">Academic Program</td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 12%;">Award Level</td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 10%;">
+                                                                <td class="fg-black font-14 font-roboto_bold align-middle lh-1"
+                                                                    style="width: 13%;">Academic Program</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 12%;">Award Level</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 10%;">
                                                                     <div class="d-inline-block text-start">
-                                                                        <span>2021 Institution</span><br><span>Degrees</span>
+                                                                        <span>2021
+                                                                            Institution</span><br><span>Degrees</span>
                                                                     </div>
                                                                 </td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 10%;">What if Degrees <span><img src="./assets/images/info-yellow.svg" alt=""></span>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 10%;">What if Degrees <span><img
+                                                                            src="./assets/images/info-yellow.svg"
+                                                                            alt=""></span>
                                                                 </td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 11%;">Degrees Final</td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 11%;">NTR</td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 11%;">What if NTR <span><img src="./assets/images/info-yellow.svg" alt=""></span></td>
-                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1" style="width: 11%;">NTR Final</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 11%;">Degrees Final</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 11%;">NTR</td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 11%;">What if NTR <span><img
+                                                                            src="./assets/images/info-yellow.svg"
+                                                                            alt=""></span></td>
+                                                                <td class="fg-black font-14 font-roboto_bold text-center align-middle lh-1"
+                                                                    style="width: 11%;">NTR Final</td>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="font-14 fg-secondary font-roboto_medium">
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Environmental Design/ Architecture</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
+                                                                <td colspan="2" class="bg-secondary-50 text-white py-2">Total</td>
+                                                                <td class="bg-secondary-50 text-white py-2 text-center">102</td>
+                                                                <td class="bg-secondary-50 text-white py-2"></td>
+                                                                <td class="bg-secondary-50 text-white py-2 text-center">275</td>
+                                                                <td colspan="2" class="bg-secondary-50 text-white py-2"></td>
+                                                                <td class="bg-secondary-50 text-white py-2 text-center">$22,916,021</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-2 align-middle lh-1" scope="row">
+                                                                    Environmental Design/ Architecture</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">0</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="15">
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="15">
                                                                 </td>
-                                                                <td class="py-2 align-middle lh-1 text-center">15</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$0</td>                      
+                                                                <td class="py-2 align-middle lh-1 text-center">15</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">$0</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="3000">
-                                                                </td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$450,000</td>                      
-                                                            </tr>                                                    
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="3000">
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">$450,000
+                                                                </td>
+                                                            </tr>
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Graphics Communications, General</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1" scope="row">Graphics
+                                                                    Communications, General</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">0</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="10">
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="10">
                                                                 </td>
-                                                                <td class="py-2 align-middle lh-1 text-center">10</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$</td>                      
+                                                                <td class="py-2 align-middle lh-1 text-center">10</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">$</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="2000">
-                                                                </td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$200,000</td>                      
-                                                            </tr>                                                    
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="2000">
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">$200,000
+                                                                </td>
+                                                            </tr>
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Elementary Education and Teaching</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1" scope="row">
+                                                                    Elementary Education and Teaching</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">7</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="15">
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="15">
                                                                 </td>
-                                                                <td class="py-2 align-middle lh-1 text-center">15</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$89,744</td>                      
+                                                                <td class="py-2 align-middle lh-1 text-center">15</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">$89,744
+                                                                </td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="">
-                                                                </td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$1,346,158</td>                      
-                                                            </tr>  
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="">
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    $1,346,158</td>
+                                                            </tr>
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Bioengineering and Biochemical Engineering</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1" scope="row">
+                                                                    Bioengineering and Biochemical Engineering</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">0</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="20">
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="20">
                                                                 </td>
-                                                                <td class="py-2 align-middle lh-1 text-center">20</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$0</td>                      
+                                                                <td class="py-2 align-middle lh-1 text-center">20</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">$0</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="2350">
-                                                                </td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$470,000</td>                      
-                                                            </tr>                                                   
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="2350">
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">$470,000
+                                                                </td>
+                                                            </tr>
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Chemical Engineering</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1" scope="row">Chemical
+                                                                    Engineering</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">0</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="15">
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="15">
                                                                 </td>
-                                                                <td class="py-2 align-middle lh-1 text-center">15</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$0</td>                      
+                                                                <td class="py-2 align-middle lh-1 text-center">15</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">$0</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="2500">
-                                                                </td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$3,750,000</td>                      
-                                                            </tr>                                                   
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="2500">
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    $3,750,000</td>
+                                                            </tr>
                                                             <tr>
-                                                                <td class="py-2 align-middle lh-1" scope="row">Biology/ Biological Sciences, General</td>
-                                                                <td class="py-2 align-middle lh-1 text-center">Bachelor’s</td>
+                                                                <td class="py-2 align-middle lh-1" scope="row">Biology/
+                                                                    Biological Sciences, General</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    Bachelor’s</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">95</td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="200">
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="200">
                                                                 </td>
-                                                                <td class="py-2 align-middle lh-1 text-center">200</td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$83,499</td>                      
+                                                                <td class="py-2 align-middle lh-1 text-center">200</td>
+                                                                <td class="py-2 align-middle lh-1 text-center">$83,499
+                                                                </td>
                                                                 <td class="py-2 align-middle lh-1 text-center">
-                                                                    <input type="text" class="table-input bg-primary-25" placeholder="">
-                                                                </td>                      
-                                                                <td class="py-2 align-middle lh-1 text-center">$16,699,863</td>                      
-                                                            </tr>                                                   
+                                                                    <input type="text" class="table-input bg-primary-25"
+                                                                        placeholder="">
+                                                                </td>
+                                                                <td class="py-2 align-middle lh-1 text-center">
+                                                                    $16,699,863</td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
                                             </div>
                                             <nav aria-label="Page navigation example" class="mt-3 pt-2">
                                                 <ul class="pagination justify-content-end">
-                                                  <li class="page-item me-3">
-                                                    <a class="page-link border-0 bg-transparent p-0"><img src="./assets/images/pagination-left-arrow.svg" alt=""></a>
-                                                  </li>
-                                                  <li class="page-item me-3"><a class="font-raleway font-12 text-white page-number page-link" href="#">1</a></li>
-                                                  <li class="page-item me-3"><a class="font-raleway font-12 text-white page-number page-link" href="#">2</a></li>
-                                                  <li class="page-item me-3"><a class="font-raleway font-12 text-white page-number page-link" href="#">3</a></li>
-                                                  <li class="page-item me-3"><a class="font-raleway font-12 text-white page-number page-link" href="#">4</a></li>
-                                                  <li class="page-item me-3"><a class="font-raleway font-12 text-white page-number page-link" href="#">5</a></li>
-                                                  <li class="page-item">
-                                                    <a class="page-link border-0 bg-transparent p-0" href="#"><img src="./assets/images/pagination-right-arrow.svg" alt=""></a>
-                                                  </li>
+                                                    <li class="page-item me-3">
+                                                        <a class="page-link border-0 bg-transparent p-0"><img
+                                                                src="./assets/images/pagination-left-arrow.svg"
+                                                                alt=""></a>
+                                                    </li>
+                                                    <li class="page-item me-3"><a
+                                                            class="font-raleway font-12 text-white page-number page-link"
+                                                            href="#">1</a></li>
+                                                    <li class="page-item me-3"><a
+                                                            class="font-raleway font-12 text-white page-number page-link"
+                                                            href="#">2</a></li>
+                                                    <li class="page-item me-3"><a
+                                                            class="font-raleway font-12 text-white page-number page-link"
+                                                            href="#">3</a></li>
+                                                    <li class="page-item me-3"><a
+                                                            class="font-raleway font-12 text-white page-number page-link"
+                                                            href="#">4</a></li>
+                                                    <li class="page-item me-3"><a
+                                                            class="font-raleway font-12 text-white page-number page-link"
+                                                            href="#">5</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link border-0 bg-transparent p-0" href="#"><img
+                                                                src="./assets/images/pagination-right-arrow.svg"
+                                                                alt=""></a>
+                                                    </li>
                                                 </ul>
-                                            </nav>                                            
+                                            </nav>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </section>
                     <!-- data table end-->
 
-                    
+
 
                 </div>
-    
+
                 <!-- footer start -->
                 <footer class="page-footer bg-white w-100 px-4 py-3 text-end">
                     <p class="m-0 font-12 fg-secondary-40">&copy; 2023, 3 Enrollment Marketing</p>
                 </footer>
                 <!-- footer end -->
+            </div>
+        </div>
+        <!-- create new modal -->
+        <div class="modal fade" id="createNewModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 custom-shadow rounded-10">
+                    <div class="px-4 modal-header border-bottom-0">
+                        <h3 class="modal-title position-relative form-title font-raleway_extraBold">Create Scenario
+                            Simulator</h3>
+                    </div>
+                    <div class="px-4 modal-body">
+                        <div class="form-floating mb-3 icon-form-control">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Scenario simulator name</label>
+                        </div>
+                        <div class="form-floating mb-2 icon-form-control">
+                            <textarea name="textarea1" class="form-control resize-none" id="" cols="30"
+                                rows="10"></textarea>
+                            <label for="textarea1">Add notes for this scenario</label>
+                            <span class="d-block text-end fg-secondary-50 font-roboto">0/300</span>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 modal-footer border-top-0">
+                        <button type="button" class="btn btn-border" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- save modal -->
+        <div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 custom-shadow rounded-10">
+                    <div class="px-4 modal-header border-bottom-0">
+                        <h3 class="modal-title position-relative form-title font-raleway_extraBold">Update Scenario
+                            Simulator</h3>
+                    </div>
+                    <div class="px-4 modal-body">
+                        <div class="form-floating mb-3 icon-form-control">
+                            <input type="text" class="form-control" id="floatingInput"
+                                value="New draft scenario simulator">
+                            <label for="floatingInput">Scenario simulator name</label>
+                        </div>
+                        <div class="form-floating mb-2 icon-form-control">
+                            <textarea name="textarea1" class="form-control resize-none" id="" cols="30"
+                                rows="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea>
+                            <label for="textarea1">Add notes for this scenario</label>
+                            <span class="d-block text-end fg-secondary-50 font-roboto">245/300</span>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 modal-footer border-top-0">
+                        <button type="button" class="btn btn-border" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -471,6 +690,16 @@
 
     <!-- custom js -->
     <script src="./assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#academicProgram2").select2({
+                allowClear: true
+            });
+            $("#awradLevel2").select2({
+                allowClear: true
+            });
+        });
+    </script>
 </body>
 
 </html>

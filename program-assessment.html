@@ -26,8 +26,11 @@
                         <img src="./assets/images/logo-small.svg" alt="Erollment Marketing" width="48" height="49"
                             class="img-fluid logo-small"></a>
                     <button class="navbar-toggler d-block border-0 sidebar-toogle" type="button">
-                        <span class="menu-icon"><img src="./assets/images/menu_open.svg" alt="Menu Icon" width="18"
-                                height="12"></span>
+                        <span class="menu-icon icon-open"><img src="./assets/images/open-menu-arrow.svg" alt="Menu Icon" width="22"
+                                height="22"></span>
+                        <span class="menu-icon icon-close"><img src="./assets/images/close-menu-arrow.svg" alt="Menu Icon" width="22"
+                                height="22"></span>
+                        
                     </button>
                 </div>
                 <div class="user-detail me-3">
@@ -78,6 +81,9 @@
                                     src="./assets/images/user-guide.svg" alt="User Guide Icon" height="20"
                                     width="20"></span><span class="nav-title">User Guide</span></a></li>
                 </ul>
+                <span class="overlay-logo d-block">
+                    <img src="./assets/images/logo-overlay.svg" alt="Overlay Logo" width="191" height="195">
+                </span>
             </div>
             <!-- side-nav end -->
 
@@ -250,6 +256,16 @@
 
     <!-- custom js -->
     <script src="./assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#academicProgram").select2({
+                allowClear: true
+            });
+            $("#institution").select2({
+                allowClear: true
+            });
+        });
+    </script>
 </body>
 
 </html>
