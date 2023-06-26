@@ -474,7 +474,7 @@ textarea.form-control{
     transition: 0.3s all linear;
 }
 .user-guide-page .leftSecLinks:hover,.user-guide-page .leftSecLinks:focus,.user-guide-page .leftSecLinks:active{
-    font-weight: bold;
+    color: var(--secondary);
 }
 /* user-guide-page css End */
 
