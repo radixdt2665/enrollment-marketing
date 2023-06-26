@@ -41,6 +41,13 @@
     width: 100%;
     height: 100%;
 }
+.login-wrapper .login-card a:hover{
+    color: var(--secondary);
+}
+.login-wrapper .login-card a:focus-visible{
+    outline: none;
+}
+
 
 /* Login End */
 
@@ -50,6 +57,9 @@
 /* common-css start */
 body{
     overflow: hidden;
+}
+.rounded-8{
+    border-radius: 8px;
 }
 .rounded-10{
     border-radius: 10px;
