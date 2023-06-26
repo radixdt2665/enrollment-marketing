@@ -470,5 +470,11 @@ textarea.form-control{
 .user-guide-page .icon-form-control.form-floating>.form-control:focus ~ label {
     background: linear-gradient(0deg, #ffffff 50%, #fafafb 50%);
 }
+.user-guide-page .leftSecLinks{
+    transition: 0.3s all linear;
+}
+.user-guide-page .leftSecLinks:hover,.user-guide-page .leftSecLinks:focus,.user-guide-page .leftSecLinks:active{
+    font-weight: bold;
+}
 /* user-guide-page css End */
 
