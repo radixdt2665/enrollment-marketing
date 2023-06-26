@@ -4,7 +4,12 @@
 .login {
     overflow: auto;
 }
-
+header {
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 999;
+}
  
 .login-wrapper{
     display: flex;
@@ -51,41 +56,6 @@
 
 /* Login End */
 
-
-
-
-/* common-css start */
-body{
-    overflow: hidden;
-}
-.rounded-8{
-    border-radius: 8px;
-}
-.rounded-10{
-    border-radius: 10px;
-}
-.p-20{
-    padding: 20px;
-}
-
-.form-title{
-    font-size: var(--font-20);
-    color: var(--secondary-85);
-    font-family: var(--raleway_semiBold);
-    letter-spacing: var(--letter-spacing-0_15);
-}
-.form-title::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 5px;
-    background-color: var(--secondary-85);
-    left: -20px;
-}
-
-/* common-css end */
-
-
 /* side-nav css start */
 .side-nav {
     max-width: 260px;
@@ -93,6 +63,7 @@ body{
     overflow-y: auto;
     transition: max-width ease 0.2s;
     overflow-x: hidden;
+    font-family: var(--raleway_semiBold);
 }
 
 .side-nav .nav-link {
@@ -105,7 +76,7 @@ body{
 }
 
 .navbar-brand {
-    width: 236px;
+    width: 220px;
 }
 
 body.small-side-nav .side-nav, 
@@ -277,7 +248,7 @@ textarea.form-control{
 }
 .program-assessment-section .dropdown-menu{
     min-width: 410px;
-
+    z-index: 99;
 }
 .program-assessment-section select.form-control{
     background-image: url("/assets/images/dropdown-custom-arrow.svg");
@@ -443,6 +414,7 @@ textarea.form-control{
 }
 .program-planner-page .modal .form-title{
     font-family: var(--font-raleway_bold);
+    font-size: var(--font-24);
 }
 .program-planner-data-table-section .data-table #tab2 .table-striped tr td:last-child{
     padding-right: 60px;
@@ -464,11 +436,38 @@ textarea.form-control{
 }
 .user-guide-page .user-guide-link{
     color: var(--color-blue);
+    transition: 0.3s all linear;
+}
+.user-guide-page .user-guide-link:hover{
+    color: var(--secondary-75);
 }
 .sticky{
     position:fixed;
     top:85px;
-    width: 376px;
+    height: auto;
+    overflow: auto;
+}
+.user-guide-page .form-floating>.form-control::placeholder{
+    color: var(--secondary-75);
+}
+.user-guide-page .icon-form-control.form-floating>.form-control{
+    width: 300px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+.user-guide-page .search-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.user-guide-page .search-label{
+    background: linear-gradient(0deg, #ffffff 50%, #fafafb 50%);
+    border-color: transparent !important;
+    border: 0px;
+}
+.user-guide-page .icon-form-control.form-floating>.form-control:focus ~ label {
+    background: linear-gradient(0deg, #ffffff 50%, #fafafb 50%);
 }
 /* user-guide-page css End */
 

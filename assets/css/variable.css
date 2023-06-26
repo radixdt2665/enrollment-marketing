@@ -187,7 +187,7 @@ body {
 }
 
 .font-raleway_extraBold {
-    font-family: var(--raleway);
+    font-family: var(--raleway_extraBold);
 }
 
 .font-raleway_black {
@@ -210,7 +210,7 @@ body {
     font-size: var(--font-22);
 }
 .font-20 {
-    font-size: var(--font-20);
+    font-size: var(--font-20) !important;
 }
 
 .font-18 {
@@ -368,6 +368,12 @@ body {
     letter-spacing: var(--letter-spacing-0_15);
 }
 
+.form-title{
+    font-size: var(--font-20);
+    color: var(--secondary-85);
+    font-family: var(--raleway_semiBold);
+    letter-spacing: var(--letter-spacing-0_15);
+}
 .form-title::before {
     content: "";
     position: absolute;
@@ -383,4 +389,13 @@ body {
 
 .navbar-toggler:focus {
     box-shadow: none;
+}
+.rounded-8{
+    border-radius: 8px;
+}
+.rounded-10{
+    border-radius: 10px;
+}
+.p-20{
+    padding: 20px;
 }

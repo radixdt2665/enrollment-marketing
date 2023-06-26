@@ -58,3 +58,8 @@
     }
 }
 
+@media(max-width:991px){
+    .login-card{
+        max-width: 760px;
+    }
+}

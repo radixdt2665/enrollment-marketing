@@ -23,7 +23,7 @@
         <nav class="navbar custom-nav py-1">
             <div class="container-fluid">
                 <div class="d-flex">
-                    <a class="navbar-brand py-1 m-0 small-side-nav" href="#"><img src="./assets/images/logo.svg"
+                    <a class="navbar-brand py-1 m-0 small-side-nav ms-2" href="#"><img src="./assets/images/logo.svg"
                             alt="Erollment Marketing" width="194" height="49" class="img-fluid nav-logo">
                         <img src="./assets/images/logo-small.svg" alt="Erollment Marketing" width="48" height="49"
                             class="img-fluid logo-small"></a>
@@ -40,7 +40,7 @@
                         <button class="bg-transparent border-0 fg-secondary-85 font-12 letter-spacing-0_4" type="button"
                             id="dropdownMenuButton1" data-bs-toggle="dropdown">
                             <span class="font-raleway pe-1">Welcome</span><span
-                                class="font-roboto_bold fg-secondary">John Doe</span> <span class="ms-2"><img
+                                class="font-roboto_bold fg-secondary-75">John Doe</span> <span class="ms-2"><img
                                     src="./assets/images/dropdown.svg" alt="Dropdwon Icon" width="12" height="7"></span>
                         </button>
                         <ul class="dropdown-menu border-0 custom-shadow letter-spacing-0_15"
@@ -62,7 +62,7 @@
     <div class="page-content program-planner-page">
         <div class="d-flex">
             <!-- side-nav start -->
-            <div class="side-nav px-2 py-4 bg-primary">
+            <div class="side-nav px-2 py-4 bg-primary position-sticky">
                 <ul class="list-unstyled side-nav-ul m-0">
                     <li class="mt-2"><a href="http://three-e.shraddha.gediya.radixusers3.com/upload-data.html"
                             class="text-decoration-none nav-link font-17 fg-secondary active d-flex"><span
@@ -91,12 +91,15 @@
 
 
             <div class="content-wrapper-main ml-auto overflow-auto">
-                <div class="content-body">
+                <div class="content-body pb-4">
                     <!-- program-planner-form-section start -->
                     <section class="program-planner-section page-content">
                         <div class="program-planner-main px-4">
                             <div class="container-fluid px-0">
-                                <h2 class="main-title">Program Planner</h2>
+                                <div class="d-flex align-items-center mb-3">
+                                    <h2 class="main-title mb-0">Program Planner</h2>
+                                    <button class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#notesModal"><img src="./assets/images/info-yellow.svg" alt="Info Icon"></button>
+                                </div>
                                 <div class="program-planner-form custom-shadow rounded-10 p-20 bg-white">
                                     <form class="planner-form">
                                         <div class="accordion" id="accordionExample">
@@ -152,20 +155,22 @@
                         <div class="horizontal-main px-4">
                             <div class="container-fluid px-0">
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 mb-3 mb-lg-0">
                                         <div class="custom-shadow rounded-10 p-20 bg-white">
-                                            <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-between mb-4">
                                                 <h3 class="form-title position-relative mb-0">Degrees Conferred</h3>
                                                 <span><img src="./assets/images/more_horiz.svg" alt="More Horizontal Icon"></span>
                                             </div>
+                                            <img src="./assets/images/program-planner-degree-conferred.svg" alt="Degree Conferred Scenario" class="img-fluid">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 mb-3 mb-lg-0">
                                         <div class="custom-shadow rounded-10 p-20 bg-white">
-                                            <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-between mb-4">
                                                 <h3 class="form-title position-relative mb-0">Net Tution Revenue</h3>
                                                 <span><img src="./assets/images/more_horiz.svg" alt="More Horizontal Icon"></span>
                                             </div>
+                                            <img src="./assets/images/program-planner-degree-conferred.svg" alt="Degree Conferred Scenario" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -179,19 +184,25 @@
                         <div class="high-chart-main px-4">
                             <div class="container-fluid px-0">
                                 <div class="row">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-5 mb-3 mb-lg-0">
                                         <div class="custom-shadow rounded-10 p-20 bg-white">
                                             <div class="d-flex justify-content-between">
                                                 <h3 class="form-title position-relative mb-0">Original Program Mix</h3>
-                                                <span></span>
+                                                <span><img src="./assets/images/download.svg" alt="Download Icon" width="24" height="24"></span>
+                                            </div>
+                                            <div class="text-center mt-4 mb-2">
+                                                <img src="./assets/images/original-program-mix.svg" alt="Original Program Mix chart" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-5 mb-3 mb-lg-0">
                                         <div class="custom-shadow rounded-10 p-20 bg-white">
                                             <div class="d-flex justify-content-between">
                                                 <h3 class="form-title position-relative mb-0">Scenario Program Mix</h3>
-                                                <span></span>
+                                                <span><img src="./assets/images/download.svg" alt="Download Icon" width="24" height="24"></span>
+                                            </div>
+                                            <div class="text-center mt-4 mb-2">
+                                                <img src="./assets/images/scenario-program-mix-chart.svg" alt="Scenario Program Mix chart" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -441,18 +452,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="fg-black font-14 font-roboto_bold text-center align-middle"
-                                                                    style="width: 10%;">What if Degrees <span><img
+                                                                    style="width: 10%;">What if Degrees <button class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#whatIfDegreeModal"><img
                                                                             src="./assets/images/info-yellow.svg"
-                                                                            alt=""></span>
+                                                                            alt=""></button>
                                                                 </td>
                                                                 <td class="fg-black font-14 font-roboto_bold text-center align-middle"
                                                                     style="width: 11%;">Degrees Final</td>
                                                                 <td class="fg-black font-14 font-roboto_bold text-center align-middle"
                                                                     style="width: 11%;">NTR</td>
                                                                 <td class="fg-black font-14 font-roboto_bold text-center align-middle"
-                                                                    style="width: 11%;">What if NTR <span><img
-                                                                            src="./assets/images/info-yellow.svg"
-                                                                            alt=""></span></td>
+                                                                    style="width: 11%;">What if NTR <button class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#whatIfNTRmodal"><img
+                                                                         src="./assets/images/info-yellow.svg"
+                                                                            alt=""></button>
+                                                                </td>
                                                                 <td class="fg-black font-14 font-roboto_bold text-end align-middle"
                                                                     style="width: 11%;">NTR Final</td>
                                                             </tr>
@@ -641,13 +653,13 @@
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content border-0 custom-shadow rounded-10">
-                    <div class="px-4 modal-header border-bottom-0">
-                        <h3 class="modal-title position-relative form-title font-raleway_extraBold">Create Scenario
+                    <div class="px-4 modal-header border-bottom-0 font-raleway_extraBold">
+                        <h3 class="modal-title position-relative form-title font-24">Create Scenario
                             Simulator</h3>
                     </div>
                     <div class="px-4 modal-body">
                         <div class="form-floating mb-3 icon-form-control">
-                            <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">Scenario simulator name</label>
                         </div>
                         <div class="form-floating mb-2 icon-form-control">
@@ -669,13 +681,13 @@
         <div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content border-0 custom-shadow rounded-10">
-                    <div class="px-4 modal-header border-bottom-0">
-                        <h3 class="modal-title position-relative form-title font-raleway_extraBold">Update Scenario
+                    <div class="px-4 modal-header border-bottom-0 font-raleway_extraBold">
+                        <h3 class="modal-title position-relative form-title font-24">Update Scenario
                             Simulator</h3>
                     </div>
                     <div class="px-4 modal-body">
                         <div class="form-floating mb-3 icon-form-control">
-                            <input type="number" class="form-control" id="floatingInput"
+                            <input type="text" class="form-control" id="floatingInput"
                                 value="New draft scenario simulator">
                             <label for="floatingInput">Scenario simulator name</label>
                         </div>
@@ -709,6 +721,66 @@
                     <div class="px-4 pb-4 modal-footer border-top-0 justify-content-center">
                         <button type="button" class="btn btn-border" data-bs-dismiss="modal">No</button>
                         <button type="button" class="btn btn-primary">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- notes modal -->
+         <div class="modal fade" id="notesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 custom-shadow rounded-10">
+                    <div class="px-4 modal-header border-bottom-0 font-raleway_extraBold">
+                        <h3 class="modal-title position-relative form-title ">Notes</h3>
+                    </div>
+                    <div class="px-4 modal-body pt-0">
+                        <p class="mb-0 fg-secondary-85">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="px-4 pb-4 modal-footer border-top-0">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+         <!-- what if modal -->
+         <div class="modal fade" id="whatIfDegreeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 custom-shadow rounded-10">
+                    <div class="px-4 my-1 modal-header border-bottom-0 justify-content-between align-items-center">                        
+                        <h3 class="modal-title position-relative form-title font-20">Available Market Adjustment</h3>
+                        <button type="button" class="border-0 bg-transparent" data-bs-dismiss="modal">
+                            <img src="./assets/images/graph-close.svg" alt="Close Icon">                        
+                        </button>
+                    </div>
+                    <div class="px-4 modal-body pt-0 font-14">
+                        <p class="mb-1 fg-secondary-85 letter-spacing-0_15">Available market represents the number of high school graduates projected to go to college that are available to you, based on the college going rate and the number of students going out of state/staying in state for each state. These projections are updated annually. </p>
+                        <p class="mb-4 fg-secondary-85 letter-spacing-0_15">Use the <span class="font-roboto_medium">What If Available Market</span> adjustment tool if any of the markets you are focusing on experience significant changes over the course of the year. </p>
+                        <p class="mb-4 fg-secondary-85 letter-spacing-0_15">To use, simply lower the percentage in the teal box of the appropriate state by the percentage of decline in college going rate that you anticipate.</p>    
+                        <p class="mb-1 fg-secondary-85 letter-spacing-0_15">Example: If recent news shows your home state anticipating a 4% decline in college going rate, enter 96% in the teal box for that state and the projection will adjust accordingly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         <!-- what if modal -->
+         <div class="modal fade" id="whatIfNTRmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 custom-shadow rounded-10">
+                    <div class="px-4 my-1 modal-header border-bottom-0 justify-content-between align-items-center">                        
+                        <h3 class="modal-title position-relative form-title font-20">Available Market Adjustment</h3>
+                        <button type="button" class="border-0 bg-transparent" data-bs-dismiss="modal">
+                            <img src="./assets/images/graph-close.svg" alt="Close Icon">                        
+                        </button>
+                    </div>
+                    <div class="px-4 modal-body pt-0 font-14">
+                        <p class="mb-1 fg-secondary-85 letter-spacing-0_15">Available market represents the number of high school graduates projected to go to college that are available to you, based on the college going rate and the number of students going out of state/staying in state for each state. These projections are updated annually. </p>
+                        <p class="mb-4 fg-secondary-85 letter-spacing-0_15">Use the <span class="font-roboto_medium">What If Available Market</span> adjustment tool if any of the markets you are focusing on experience significant changes over the course of the year. </p>
+                        <p class="mb-4 fg-secondary-85 letter-spacing-0_15">To use, simply lower the percentage in the teal box of the appropriate state by the percentage of decline in college going rate that you anticipate.</p>    
+                        <p class="mb-1 fg-secondary-85 letter-spacing-0_15">Example: If recent news shows your home state anticipating a 4% decline in college going rate, enter 96% in the teal box for that state and the projection will adjust accordingly.</p>
                     </div>
                 </div>
             </div>
