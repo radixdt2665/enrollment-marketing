@@ -476,5 +476,8 @@ textarea.form-control{
 .user-guide-page .leftSecLinks:hover,.user-guide-page .leftSecLinks:focus,.user-guide-page .leftSecLinks:active{
     color: var(--secondary);
 }
+.user-guide-page .right-sec{
+    word-break: break-word;
+}
 /* user-guide-page css End */
 
