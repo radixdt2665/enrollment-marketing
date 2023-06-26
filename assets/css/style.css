@@ -64,6 +64,7 @@ header {
     transition: max-width ease 0.2s;
     overflow-x: hidden;
     font-family: var(--raleway_semiBold);
+    z-index: 1111;
 }
 
 .side-nav .nav-link {

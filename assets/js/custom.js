@@ -55,7 +55,7 @@ $(document).ready(function() {
                                 "left" : ($(".side-nav").outerWidth() + 28) + "px"});
           }
         } 
-      },150);
+      },220);
      
   });
 
