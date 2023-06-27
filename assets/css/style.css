@@ -64,7 +64,7 @@ header {
     transition: max-width ease 0.2s;
     overflow-x: hidden;
     font-family: var(--raleway_semiBold);
-    z-index: 1111;
+    z-index: 10;
 }
 
 .side-nav .nav-link {
@@ -317,9 +317,7 @@ textarea.form-control{
     padding-right: 25px;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__clear{
-    position: absolute;
-    right: 0;
-    margin-top: 4px;
+    display: none;
 }
 .select2-container--default.select2-container--focus .select2-selection--multiple{
     border-color: var(--secondary-25);
@@ -381,9 +379,15 @@ textarea.form-control{
 .program-planner-data-table-section .data-table .table-input:focus-visible{
     outline: 0;
 }
-.program-planner-data-table-section ::-webkit-inner-spin-button{
-    display: none;
+
+.program-planner-data-table-section input::-webkit-outer-spin-button,
+.program-planner-data-table-section input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
+.program-planner-data-table-section input[type=number] {
+    -moz-appearance: textfield;
+  }
 .program-planner-data-table-section .data-table .table-striped>tbody>tr td,
 .program-planner-data-table-section .data-table .table-striped>thead>tr td{
     height: 50px;
@@ -431,9 +435,14 @@ textarea.form-control{
     text-decoration: none;
     margin-bottom: 24px;
     display: inline-block;
-}
-.left-sec, .right-sec  {
+} 
+.right-sec  {
     height: 100%;
+}
+.left-sec{
+    /* top: 161px; */
+    z-index: 9;
+    min-height: 100vh;
 }
 .user-guide-page .user-guide-link{
     color: var(--color-blue);
@@ -481,3 +490,17 @@ textarea.form-control{
 }
 /* user-guide-page css End */
 
+.content-wrapper-main{
+    /* flex: 1 0 auto; */
+    transition: width 0.2s ease 0s;
+}
+
+.user-guide-page .content-body{
+    padding-top: 0;
+}
+.user-guide-page .userPageHeading{
+    padding-top: 36px;
+    background: var(--body-bg);
+    /* top: 66px; */
+    z-index: 10;
+}

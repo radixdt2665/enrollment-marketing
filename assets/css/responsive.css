@@ -5,6 +5,9 @@
     .program-planner-page .modal-dialog{
         max-width: 576px;
     }
+    .program-planner-page #dltModal .modal-dialog{
+        max-width: 423px;
+    }
 }
 @media(min-width:1024px){
     .upload-data-section .w-500 {
