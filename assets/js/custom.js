@@ -93,46 +93,33 @@ $(document).ready(function () {
     );
   });
 
-  
-  
-
-//   // Data retrieved from https://netmarketshare.com/
-//   // Make monochrome colors
-//   const colors = Highcharts.getOptions().colors.map((c, i) =>
-//     // Start out with a darkened base color (negative brighten), and end
-//     // up with a much brighter color
-//     Highcharts.color(Highcharts.getOptions().colors[0])
-//       .brighten((i - 3) / 7)
-//       .get()
-//   );
-
-// Build the chart
-Highcharts.chart("container", {
+  // Build the chart
+  Highcharts.chart("container1", {
     chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: "pie",
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      type: "pie",
     },
     title: {
-        text: "",
-        align: "left",
+      text: "",
+      align: "left",
     },
     tooltip: {
-        pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+      pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
     },
     accessibility: {
-        point: {
-            valueSuffix: "%",
-        },
+      point: {
+        valueSuffix: "%",
+      },
     },
     plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: "pointer",
-        // colors,
-            colors: ['#50B432', '#ED561B', '#DDDF00'],
-        borderRadius: 1,
+      pie: {
+        lineWidth: 4,
+        allowPointSelect: true,
+        cursor: "pointer",
+        colors: ["#ffd100", "#b1b3b4", "#b1e4e3"],
+        // borderRadius: 1,
         dataLabels: {
           enabled: true,
           format: "{point.percentage:.1f} %",
@@ -152,10 +139,74 @@ Highcharts.chart("container", {
         colorByPoint: true,
         data: [
           { name: "Low Opportunity", y: 42 },
-          { name: "Low Opportunity", y: 40 },
-          { name: "Low Opportunity", y: 18 },
+          { name: "Moderate Opportunity", y: 40 },
+          { name: "High Opportunity", y: 18 },
         ],
       },
+    ],
+  });
+
+  // degree conferred chart
+  // Data retrieved https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature
+  Highcharts.chart("container2", {
+    chart: {
+      type: "line",
+    },
+    title: {
+      text: "",
+    },
+    subtitle: {
+      text: "",
+    },
+    legend: {
+      enabled: false,
+    },
+    // line: {
+    //   point: {
+    //     events: {
+    //       click: function (event) {
+    //         this.series.data.forEach(function (point) {
+    //           if (point.color == "#2caffe") {
+    //             point.update({ color: "#434348" });
+    //           }
+    //         });
+    //         this.update({ color: "#1a1aff" });
+    //       },
+    //     },
+    //   },
+    // },
+    xAxis: {
+      categories: [
+        "100",
+        "120",
+        "140",
+        "160",
+        "180",
+        "200",
+        "220",
+        "240",
+        "260",
+        "280",
+      ],
+    },
+    yAxis: {
+      title: {
+        text: "",
+      },
+    },
+    plotOptions: {
+      line: {
+        dataLabels: {
+          enabled: true,
+        },
+        enableMouseTracking: false,
+      },
+    },
+    series: [
+      {
+        name: "",
+        data: [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
+      },    
     ],
   });
 

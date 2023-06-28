@@ -554,10 +554,15 @@ textarea.form-control{
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
-.highcharts-figure #container {
+.highcharts-figure #container1 {
     height: 288px;
+}
+.highcharts-figure #container2 {
+    height: 150px;
 }
 .highcharts-credits{
     display: none;
 }
+
+
 
