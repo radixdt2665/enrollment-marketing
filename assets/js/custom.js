@@ -96,41 +96,42 @@ $(document).ready(function () {
   
   
 
-  // Data retrieved from https://netmarketshare.com/
-  // Make monochrome colors
-  const colors = Highcharts.getOptions().colors.map((c, i) =>
-    // Start out with a darkened base color (negative brighten), and end
-    // up with a much brighter color
-    Highcharts.color(Highcharts.getOptions().colors[0])
-      .brighten((i - 3) / 7)
-      .get()
-  );
+//   // Data retrieved from https://netmarketshare.com/
+//   // Make monochrome colors
+//   const colors = Highcharts.getOptions().colors.map((c, i) =>
+//     // Start out with a darkened base color (negative brighten), and end
+//     // up with a much brighter color
+//     Highcharts.color(Highcharts.getOptions().colors[0])
+//       .brighten((i - 3) / 7)
+//       .get()
+//   );
 
-  // Build the chart
-  Highcharts.chart("container", {
+// Build the chart
+Highcharts.chart("container", {
     chart: {
-      plotBackgroundColor: null,
-      plotBorderWidth: null,
-      plotShadow: false,
-      type: "pie",
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: "pie",
     },
     title: {
-      text: "",
-      align: "left",
+        text: "",
+        align: "left",
     },
     tooltip: {
-      pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+        pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
     },
     accessibility: {
-      point: {
-        valueSuffix: "%",
-      },
+        point: {
+            valueSuffix: "%",
+        },
     },
     plotOptions: {
-      pie: {
-        allowPointSelect: true,
-        cursor: "pointer",
-        colors,
+        pie: {
+            allowPointSelect: true,
+            cursor: "pointer",
+        // colors,
+            colors: ['#50B432', '#ED561B', '#DDDF00'],
         borderRadius: 1,
         dataLabels: {
           enabled: true,
