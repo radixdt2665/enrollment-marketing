@@ -351,8 +351,7 @@ body {
 
 .input-right-txt {
     position: absolute;
-    top: 10px;
-    bottom: 0px;
+    top: 15px;
     right: 8px;
     display: flex;
     align-items: center;

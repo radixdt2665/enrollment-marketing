@@ -28,7 +28,7 @@ header {
 }
 
 .login-logo {
-    margin-bottom: 82px;
+    margin-bottom: 52px;
 }
 
 .login-content-sec {
@@ -53,7 +53,9 @@ header {
     outline: none;
 }
 
-
+.login-wrapper .form-control.is-invalid, .login-wrapper .was-validated .form-control:invalid{
+    background-image: none;
+}
 /* Login End */
 
 /* side-nav css start */
@@ -292,7 +294,7 @@ textarea.form-control{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/assets/images/close.svg");
+    background-image: url("../images/close.svg");
     background-repeat: no-repeat;
     color: transparent;
     background-position: center;
@@ -488,13 +490,6 @@ textarea.form-control{
 .user-guide-page .right-sec{
     word-break: break-word;
 }
-/* user-guide-page css End */
-
-.content-wrapper-main{
-    /* flex: 1 0 auto; */
-    transition: width 0.2s ease 0s;
-}
-
 .user-guide-page .content-body{
     padding-top: 0;
 }
@@ -504,14 +499,17 @@ textarea.form-control{
     /* top: 66px; */
     z-index: 10;
 }
+/* user-guide-page css End */
+
+/* common-css start */
+.content-wrapper-main{
+    /* flex: 1 0 auto; */
+    transition: width 0.2s ease 0s;
+}
+/* common-css end */
 
 
-
-
-
-
-
-
+/* highchart css start */
 .highcharts-figure,
 .highcharts-data-table table {
     min-width: 320px;
@@ -563,6 +561,14 @@ textarea.form-control{
 .highcharts-credits{
     display: none;
 }
+/* highchart css end */
 
 
 
+/* my-profile-page css start */
+.my-profile-page .profile-info-form .form-floating .email-label{
+    background: linear-gradient(0deg, #e9ecef 50%, #ffffff 50%);
+    border-color: transparent !important;
+    border: 0;
+}
+/* my-profile-page css end */

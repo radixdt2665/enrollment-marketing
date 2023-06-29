@@ -64,21 +64,21 @@
             <!-- side-nav start -->
             <div class="side-nav px-2 py-4 bg-primary position-sticky">
                 <ul class="list-unstyled side-nav-ul m-0">
-                    <li class="mt-2"><a href="http://three-e.shraddha.gediya.radixusers3.com/upload-data.html"
+                    <li class="mt-2"><a href="./upload-data.html"
                             class="text-decoration-none nav-link font-17 fg-secondary active d-flex"><span
                                 class="pe-2"><img src="./assets/images/manage-data.svg" alt="Manage Data Icon"
                                     height="20" width="20"></span><span class="nav-title">Load/Manage Data</span></a>
                     </li>
-                    <li class="mt-2"><a href="http://three-e.shraddha.gediya.radixusers3.com/program-assessment.html"
+                    <li class="mt-2"><a href="./program-assessment.html"
                             class="text-decoration-none nav-link font-17 fg-secondary d-flex"><span class="pe-2"><img
                                     src="./assets/images/program-assessment.svg" alt="Program Assessment Icon"
                                     height="20" width="20"></span><span class="nav-title">Program Assessment</span></a>
                     </li>
-                    <li class="mt-2"><a href="http://three-e.shraddha.gediya.radixusers3.com/program-planner.html"
+                    <li class="mt-2"><a href="./program-planner.html"
                             class="text-decoration-none nav-link font-17 fg-secondary d-flex"><span class="pe-2"><img
                                     src="./assets/images/program-planner.svg" alt="Program Planner Icon" height="20"
                                     width="20"></span><span class="nav-title">Program Planner</span></a></li>
-                    <li class="mt-2"><a href="http://three-e.shraddha.gediya.radixusers3.com/user-guide.html"
+                    <li class="mt-2"><a href="./user-guide.html"
                             class="text-decoration-none nav-link font-17 fg-secondary d-flex"><span class="pe-2"><img
                                     src="./assets/images/user-guide.svg" alt="User Guide Icon" height="20"
                                     width="20"></span><span class="nav-title">User Guide</span></a></li>
@@ -233,13 +233,13 @@
                                         <ul class="nav nav-tabs ps-3 border-bottom-0" id="myTab" role="tablist">
                                             <li class="nav-item me-3" role="presentation">
                                                 <button
-                                                    class="nav-link font-raleway_semiBold fg-secondary-85 font-20 active"
+                                                    class="nav-link font-roboto_bold fg-secondary-85 font-20 active"
                                                     data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab"
                                                     aria-selected="false">5 Year Degree Conferred Trend
                                                     (2017-2021)</button>
                                             </li>
                                             <li class="nav-item me-3" role="presentation">
-                                                <button class="nav-link font-raleway_semiBold fg-secondary-85 font-20"
+                                                <button class="nav-link font-roboto_bold fg-secondary-85 font-20"
                                                     data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"
                                                     aria-selected="false">What If Scenario Planning</button>
                                             </li>
@@ -834,7 +834,144 @@
             $("#awradLevel2").select2({
                 allowClear: true
             });
-        });
+
+            Highcharts.chart("container1", {
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    type: "pie",
+                },
+                title: {
+                    text: "",
+                    align: "left",
+                },
+                tooltip: {
+                    pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+                },
+                accessibility: {
+                    point: {
+                    valueSuffix: "%",
+                    },
+                },
+                plotOptions: {
+                    pie: {
+                    lineWidth: 4,
+                    allowPointSelect: true,
+                    cursor: "pointer",
+                    colors: ["#ffd100", "#b1b3b4", "#b1e4e3"],
+                    // borderRadius: 1,
+                    dataLabels: {
+                        enabled: true,
+                        format: "{point.percentage:.1f} %",
+                        distance: -50,
+                        filter: {
+                        property: "percentage",
+                        operator: ">",
+                        value: 4,
+                        },
+                    },
+                    showInLegend: true,
+                    },
+                },
+                series: [
+                    {
+                    name: "Share",
+                    colorByPoint: true,
+                    data: [
+                        { name: "Low Opportunity", y: 42 },
+                        { name: "Moderate Opportunity", y: 40 },
+                        { name: "High Opportunity", y: 18 },
+                    ],
+                    },
+                ],
+                });
+            });
+
+            Highcharts.chart("container2", {
+                chart: {
+                type: "line",
+                },
+                title: {
+                text: "",
+                },
+                subtitle: {
+                text: "",
+                },
+                legend: {
+                enabled: false,
+                },
+                // line: {
+                //   point: {
+                //     events: {
+                //       click: function (event) {
+                //         this.series.data.forEach(function (point) {
+                //           if (point.color == "#2caffe") {
+                //             point.update({ color: "#434348" });
+                //           }
+                //         });
+                //         this.update({ color: "#1a1aff" });
+                //       },
+                //     },
+                //   },
+                // },
+                xAxis: {
+                categories: [
+                    "100",
+                    "120",
+                    "140",
+                    "160",
+                    "180",
+                    "200",
+                    "220",
+                    "240",
+                    "260",
+                    "280",
+                ],
+                },
+                yAxis: {
+                title: {
+                    text: "",
+                },
+                },
+                plotOptions: {
+                line: {
+                    dataLabels: {
+                    enabled: true,
+                    },
+                    enableMouseTracking: false,
+                },
+                },
+                series: [
+
+                    {
+            
+                    name: "",
+            
+                    data: [
+            
+                        {
+            
+                        
+            
+                        y: 16,
+            
+                        y: 20,
+            
+                        y: 30,
+            
+                        y: 40,
+            
+                        color: "#63666a" /* color of the unfilled part of the bar */,
+            
+                        },
+            
+                    ],
+            
+                    },
+            
+                ],
+            });
     </script>
 </body>
 
