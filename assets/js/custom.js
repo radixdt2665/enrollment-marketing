@@ -203,11 +203,34 @@ $(document).ready(function () {
       },
     },
     series: [
-      {
-        name: "",
-        data: [16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0],
-      },    
-    ],
+
+        {
+  
+          name: "",
+  
+          data: [
+  
+            {
+  
+             
+  
+              y: 16,
+  
+              y: 20,
+  
+              y: 30,
+  
+              y: 40,
+  
+              color: "#63666a" /* color of the unfilled part of the bar */,
+  
+            },
+  
+          ],
+  
+        },
+  
+      ],
   });
 
   $(window).scroll(function () {
