@@ -505,14 +505,22 @@ textarea.form-control{
 .content-wrapper-main{
     /* flex: 1 0 auto; */
     transition: width 0.2s ease 0s;
+    max-width: calc(100% - 260px);
+    width: 100%;
 }
+.small-side-nav .content-wrapper-main{
+    max-width: calc(100% - 72px);
+    width: 100%;
+}
+
+
 /* common-css end */
 
 
 /* highchart css start */
 .highcharts-figure,
 .highcharts-data-table table {
-    min-width: 320px;
+    /* min-width: 320px; */
     max-width: 660px;
     margin: 0 auto;
 }
